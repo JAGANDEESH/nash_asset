@@ -454,7 +454,7 @@ button:hover span {
                         <div class="login-with-email-link social-login-buttons">
                             <div class="login-button-wrapper">
                                 <a href="#login-with-email-link"
-                                    class="btn btn-block btn-default btn-sm btn-login-option btn-login-with-email-link">
+                                    class="btn btn-block btn-default btn-sm btn-login-option btn-login-with-email-link " id="email_li">
                                     {{ _("Login with Email Link") }}</a>
                             </div>
                         </div>
@@ -492,15 +492,15 @@ button:hover span {
     {%- endif -%}
     <section class='for-signup {{ "signup-disabled" if disable_signup else "" }}'>
         {{ logo_section(_('Create a {0} Account').format(app_name or _("Frappe"))) }}
-        <div class="login-content">
+        <div class="login-content page-card">
             {%- if not disable_signup -%}
             {{ signup_form_template }}
             {%- else -%}
-           <!--  <div class='page-card-head mb-2'>
+            <div class='page-card-head mb-2'>
                 <span class='indicator gray'>{{_("Signup Disabled")}}</span>
                 <p class="text-muted text-normal sign-up-message mt-1 mb-8">{{_("Signups have been disabled for this website.")}}</p>
                 <div><a href='/' class='btn btn-primary btn-md'>{{ _("Home") }}</a></div>
-            </div> -->
+            </div>
             {%- endif -%}
         </div>
 
@@ -575,11 +575,9 @@ button:hover span {
 {% endblock %}
 
 {% block sidebar %}{% endblock %}
-
             </div>
         </div>
     </form>
     </div>
 </div>
-
 </html>
