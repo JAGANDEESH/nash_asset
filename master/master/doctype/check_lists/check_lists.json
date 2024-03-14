@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 12:36:24.780628",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "view_checklist_section",
+  "machine_number",
+  "machine_name",
+  "machine_description",
+  "machine_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "view_checklist_section",
+   "fieldtype": "Section Break",
+   "label": "VIEW CHECKLIST"
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Data",
+   "label": "Machine Number"
+  },
+  {
+   "fieldname": "machine_name",
+   "fieldtype": "Data",
+   "label": "Machine Name"
+  },
+  {
+   "fieldname": "machine_description",
+   "fieldtype": "Data",
+   "label": "Machine Description"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Attach",
+   "label": "Machine Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 12:46:13.400972",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Check Lists",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
