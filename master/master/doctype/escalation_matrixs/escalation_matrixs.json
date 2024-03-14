@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ESM{####}",
+ "creation": "2024-03-14 15:42:54.959283",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "stage",
+  "section_break_4uqx",
+  "duration_one",
+  "column_break_orit",
+  "int_eijl",
+  "section_break_7zib",
+  "role_one",
+  "section_break_lh9f",
+  "duration_two",
+  "column_break_sfod",
+  "int_tjwl",
+  "section_break_mttr",
+  "role_two",
+  "section_break_i6za",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "duration_one",
+   "fieldtype": "Select",
+   "label": "Duration One",
+   "options": "Days\nHours\nMinutes"
+  },
+  {
+   "fieldname": "role_one",
+   "fieldtype": "Select",
+   "label": "Role One",
+   "options": "Super Admin\nOperator\nRequestor\nAdmin"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "duration_two",
+   "fieldtype": "Select",
+   "label": "Duration Two",
+   "options": "Days\nHours\nMinutes"
+  },
+  {
+   "fieldname": "role_two",
+   "fieldtype": "Select",
+   "label": "Role Two",
+   "options": "Super Admin\nOperator\nRequestor\nAdmin"
+  },
+  {
+   "fieldname": "int_eijl",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "int_tjwl",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "section_break_4uqx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_7zib",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_lh9f",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_mttr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_orit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sfod",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_i6za",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 16:21:07.966155",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Escalation Matrixs",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

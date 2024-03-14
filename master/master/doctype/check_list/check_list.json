@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:checklist_number",
+ "creation": "2024-03-14 14:58:59.615493",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nlkx",
+  "checklist_number",
+  "checklist_description",
+  "machine_type_name",
+  "checklist",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nlkx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Check List",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "checklist_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Checklist Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "options": "Check Lists Child"
+  },
+  {
+   "fieldname": "checklist_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Checklist Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "machine_type_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Machine Type Name",
+   "options": "Press Machine - 01\nPress Machine - 02\nWelding Machine - 01\nPower Coating - 01\nPower Coating - 02\nPower Coating - 03\nPower Coating - 04\nPneumatic Press - 01\nPneumatic Press - 02",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-14 15:08:00.469189",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Check List",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
