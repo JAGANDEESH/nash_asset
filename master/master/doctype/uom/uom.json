@@ -1,49 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-14 12:36:24.780628",
+ "autoname": "field:uom_code",
+ "creation": "2024-03-14 15:35:01.436902",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "view_checklist_section",
-  "machine_number",
-  "machine_name",
-  "machine_description",
-  "machine_type"
+  "uom_list_section",
+  "uom_code",
+  "uom_name",
+  "uom_status"
  ],
  "fields": [
   {
-   "fieldname": "view_checklist_section",
+   "fieldname": "uom_list_section",
    "fieldtype": "Section Break",
-   "label": "VIEW CHECKLIST"
+   "label": "UOM List"
   },
   {
-   "fieldname": "machine_number",
+   "fieldname": "uom_code",
    "fieldtype": "Data",
-   "label": "Machine Number"
+   "label": "UOM Code",
+   "unique": 1
   },
   {
-   "fieldname": "machine_name",
+   "fieldname": "uom_name",
    "fieldtype": "Data",
-   "label": "Machine Name"
+   "label": "UOM Name"
   },
   {
-   "fieldname": "machine_description",
-   "fieldtype": "Data",
-   "label": "Machine Description"
-  },
-  {
-   "fieldname": "machine_type",
-   "fieldtype": "Attach",
-   "label": "Machine Type"
+   "fieldname": "uom_status",
+   "fieldtype": "Select",
+   "label": "UOM Status",
+   "options": "Active\nInactive"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 12:46:13.400972",
+ "modified": "2024-03-14 15:41:13.093525",
  "modified_by": "Administrator",
  "module": "Master",
- "name": "Check Lists",
+ "name": "UOM",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-03-14 15:13:55.589542",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dpc1",
+  "machine_type",
+  "description",
+  "plant",
+  "status",
+  "created_by",
+  "created_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dpc1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Machine Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Created By"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Data",
+   "label": "Created Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 15:26:41.795553",
+ "modified_by": "Administrator",
+ "module": "master1",
+ "name": "Machine Type",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

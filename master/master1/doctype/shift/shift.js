@@ -1,7 +1,7 @@
 // Copyright (c) 2024, mazework and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Check Lists", {
+// frappe.ui.form.on("shift", {
 // 	refresh(frm) {
 
 // 	},

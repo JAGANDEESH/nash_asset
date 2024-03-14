@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 14:00:01.253178",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hxcg",
+  "code",
+  "name1",
+  "plant_address",
+  "country",
+  "state",
+  "city",
+  "column_break_65dy",
+  "incharge",
+  "incharge_mobile",
+  "incharge_email",
+  "column_break_7yvs",
+  "status",
+  "created_by",
+  "created_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hxcg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incharge",
+   "fieldtype": "Data",
+   "label": "Incharge"
+  },
+  {
+   "fieldname": "incharge_mobile",
+   "fieldtype": "Phone",
+   "label": "Incharge Mobile"
+  },
+  {
+   "fieldname": "incharge_email",
+   "fieldtype": "Data",
+   "label": "Incharge Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Plant",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "plant_address",
+   "fieldtype": "Small Text",
+   "label": "Plant Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_65dy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7yvs",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-14 15:52:51.610901",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Plant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
