@@ -1,25 +1,150 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:company_code",
  "creation": "2024-03-14 12:17:35.930701",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company_code"
+  "company_code",
+  "company_name",
+  "company_address",
+  "column_break_vdwo",
+  "company_country",
+  "company_state",
+  "company_city",
+  "column_break_axis",
+  "company_email",
+  "company_phone",
+  "company_mobile",
+  "pincode",
+  "company_website",
+  "column_break_0jxi",
+  "company_gstinno",
+  "company_logo",
+  "company_status",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "company_code",
    "fieldtype": "Data",
-   "label": "Company Code"
+   "in_list_view": 1,
+   "label": "Company Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_country",
+   "fieldtype": "Data",
+   "label": "Company Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_state",
+   "fieldtype": "Data",
+   "label": "Company State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_city",
+   "fieldtype": "Data",
+   "label": "Company City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_phone",
+   "fieldtype": "Phone",
+   "label": "Company Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_mobile",
+   "fieldtype": "Phone",
+   "label": "Company Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_website",
+   "fieldtype": "Data",
+   "label": "Company Website",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_gstinno",
+   "fieldtype": "Data",
+   "label": "Company GstinNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach",
+   "label": "Company Logo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_status",
+   "fieldtype": "Select",
+   "label": "Company Status",
+   "options": "Active\nInactive\nUnder Maintenance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Company",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vdwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_axis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0jxi",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 12:18:06.042304",
+ "modified": "2024-03-14 15:24:01.106942",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Company",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
