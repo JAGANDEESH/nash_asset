@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CheckLists(Document):
+class UOM(Document):
 	pass
