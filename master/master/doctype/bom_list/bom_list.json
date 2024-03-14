@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:bom_id",
+ "creation": "2024-03-14 15:25:43.878934",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bom_id",
+  "description",
+  "mc_types",
+  "amended_from",
+  "bom_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "bom_id",
+   "fieldtype": "Int",
+   "label": "BOM ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "mc_types",
+   "fieldtype": "Select",
+   "label": "M/C Types",
+   "options": "Press Machine-01\nPress Machine-02\nWelding Machine-01\nPowder Coating-01\nPowder Coating-02\nPowder Coating-03\nPowder Coating-04\npneumatic Press-01\npneumatic Press-02"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "BOM List",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "bom_table",
+   "fieldtype": "Table",
+   "label": "BOM Table",
+   "options": "BOM child table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-14 15:56:35.433674",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "BOM List",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
