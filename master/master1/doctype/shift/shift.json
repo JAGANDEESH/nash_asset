@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 14:18:28.068915",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_c3um",
+  "shift_code",
+  "shift_name",
+  "shift_incharge",
+  "shift_start_time",
+  "shift_end_time",
+  "created_by",
+  "created_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_c3um",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shift_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift_incharge",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Incharge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift_start_time",
+   "fieldtype": "Data",
+   "label": "Shift Start Time"
+  },
+  {
+   "fieldname": "shift_end_time",
+   "fieldtype": "Data",
+   "label": "Shift End Time"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Created By",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Data",
+   "label": "Created Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 15:10:32.689735",
+ "modified_by": "Administrator",
+ "module": "master1",
+ "name": "shift",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
