@@ -155,6 +155,10 @@ img{
     transition: .4s;
 
  }
+ .forget{
+        text-decoration: none;
+        color:black;
+    }
  .submit:hover{
     background: rgba(43, 196, 29, 0.937);
     color: #fff;
@@ -206,8 +210,15 @@ label{
     .input-box{
         max-width:200px;
     }
+    #email_li{
+        position: relative;
+    left: 80px;
+    }
     
 }
+/* @media only screen and (max-width:470px){
+
+} */
     </style>
 </head>
 <body>
@@ -247,7 +258,7 @@ label{
                         
                      </div>  
                     <p class="forgot-password-message">
-                        <a href="#forgot">{{ _("Forgot Password?") }}</a>
+                        <a href="#forgot" class="forget">{{ _("Forgot Password?") }}</a>
                     </p>
                 </div>
                 {% endif %}
@@ -369,6 +380,8 @@ label{
         </div>
 
     </section>
+
+    
 
     <section class='for-forgot'>
         {{ logo_section('Forgot Password') }}
