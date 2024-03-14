@@ -2,409 +2,284 @@
 
 {% macro email_login_body() -%}
 {% if not disable_user_pass_login or (ldap_settings and ldap_settings.enabled) %}
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frappe-Master</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style type="text/css">
-        * {
-    font-family: "Poppins", sans-serif;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Rowdies", sans-serif;
-    background: url("/apps/master/master/www/weatherback.jpeg");
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+      /* POPPINS FONT */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.text-center{
+    position: absolute;
+    top:430px;
+    right:150px;
+}
+#email_li{
+    padding: 10px;
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+    
+}
+.login-divider{
+   
+
+}
+#email_li:hover{
+    background:blue;
+}
+header{
+    font-size: 50px;
+}
+.wrapper{
+    background: url("5d62b49ac544b_thumb900.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20px 0 20px;
+    /* width:100vw; */
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.side-image{
+    background-image: url("06_08_gif.gif ");
+    background-repeat: no-repeat;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 0vh;
-    background: url("./weatherback.jpeg");
-/*    background-position: center;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-/*    background-attachment: fixed;*/
-    margin-top: 0px;
-    margin-bottom: 200px;
-}
-@property --a {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-.box {
+  
+    border-radius: 10px 10px 10px 10px;
     position: relative;
-    margin-top: 3px;
-    width: 450px;
-    height: 540px; /* Adjusted to fit the login box inside */
-    background: repeating-conic-gradient(from var(--a), #ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
-    background: transparent;
-    filter: drop-shadow(0px 15px 50px #000);
-    border-radius: 20px;
-    animation: rotating 4s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
 }
-.box:hover
-{
-    width: 400px;
-    height: 540px;
-
+.row{
+  width:  900px;
+  height:550px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+  background: transparent;
 
 }
-@keyframes rotating {
-    0% {
-        --a: 0deg;
-    }
-    100% {
-        --a: 360deg;
-    }
-}
-.box::before {
-    content: '';
+.text{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: repeating-conic-gradient(from var(--a), #45feff 0%, #45feff 5%, transparent 5%, transparent 40%, #45feff 50%);
-    filter: drop-shadow(0px 15px 50px #000);
-    border-radius: 20px;
-    animation: rotating 4s linear infinite;
-    animation-delay: -1s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.box::after {
-    content: '';
+.text p{
+    color: #fff;
+    font-size: 20px; 
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+img{
+    width: 35px;
     position: absolute;
-    inset: 4px;
-    background: #e198dc;
-    border-radius: 15px;
-    border: 2px solid white;
+    top: 30px;
+    left: 30px;
 }
-.login {
-    position: absolute;
-    inset: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    transition:0.2s;
-    color:#fff;
-    overflow: hidden;
-    padding: 3px;
-    margin-bottom: 5px;
-}
-.box:hover .login{
-    inset:40px;
-}
-.loginbox{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
-    gap:5px;
-    width: 80%;
-    transform: translateY(120px);
-    transition: 0.5s;
-}
-.box:hover .loginbox
-{
-    transform: translateY(0px);
-}
-.loginbox h2 ,.heading-signin {
-    margin-top:1rem;
-/*    padding-bottom: 25px;*/
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight:600 ;
-    color: black;
+.input-box header{
     font-weight: 700;
-    letter-spacing: 0.ms;
+    text-align: center;
+    margin-bottom: 45px;
 }
-.loginbox h2 i,.heading-signin i{
-    color: #ff2770;
-    text-shadow: 0 0 5px #ff2770,0 0 25px #ff2770;
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field input:focus ~ label
+   {
+    top: -10px;
+    font-size: 13px;
+  }
+  .input-field input:valid ~ label
+  {
+   top: -10px;
+   font-size: 13px;
+   color: #5d5076;
+ }
+ .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #2a203b;
+ }
+ .submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+
+ }
+ .forget{
+        text-decoration: none;
+        color:black;
+    }
+ .submit:hover{
+    background: rgba(43, 196, 29, 0.937);
+    color: #fff;
+    box-shadow:2px 2px 2px 2px rgba(43, 196, 29, 0.937) ;
+ }
+ .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
 }
 label{
-    margin-left:-169px;
-    color: black;
+    color: #000;
 }
-input{
-    width: 100%;
-    padding: 10px 30px;
-/*    margin-bottom: 10px;*/
-    outline: none;
-    border: none;
-    font-size: 1em;
-    background:rgba(0, 0, 0, 0.1);
-    border: 2px solid white;
-    border-radius: 30px;
-    color:black;
-}
-input::placeholder
-{
-    color:#999 ;
-}
- /*button
-{
-    width: 100%;
-    padding: 10px 20px;
-    outline: none;
-    border: none;
-    font-size: 1em;
-    background:rgba(0, 0, 0, 0.1);
-    border: 2px solid white;
-    border-radius: 30px;
-    background: #650083e3;
-    border: none;
-    font-weight: 500;
-    color: black;
-    cursor: pointer;
-    transition: 0.5s;
-}
- button:hover
-{
-    box-shadow: 0 0 10px #45feff, 0 0 60px #45feff;
-}*/
-
-
-/* CSS */
-button {
-  align-items: center;
-  background-image: linear-gradient(135deg, #C831FD  40%, #C831FD );
-  border: 0;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  font-family: "Codec cold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  height: 54px;
-  justify-content: center;
-  letter-spacing: .4px;
-  line-height: 1;
-  max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-button:active {
-  outline: 0;
-}
-
-button:hover {
-  outline: 0;
-}
-
-button span {
-  transition: all 200ms;
-}
-
-button:hover span {
-  transform: scale(.9);
-  opacity: .75;
-}
-
-@media screen and (max-width: 991px) {
-  button {
-    font-size: 15px;
-    height: 50px;
-  }
-
-  button span {
-    line-height: 50px;
-  }
-}
-.group
-{
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-}
-.group a{
-    color: #fff;
-    text-decoration: none;
-}
-.group a:nth-child(2)
-{
-    color: #ff2770;
-    font-weight: 600;
-}
-.box .login .inputgroup.error{
-    color: rgb(242,18,18);
-    font-size: 16px;
-/*    margin-top: 5px;*/
-}
-.box .login.inputgroup .success input{
-    border-color: #000;
-}
-.box .login.inputgroup .error input{
-    border-color:#ff2770 ;
-}
-./*for-login .page-card, .for-forgot .page-card, .for-login-with-email-link .page-card, .for-signup .page-card, .for-email-login .page-card {
-    padding: 45px 10px;
-    background-color: #25252b;
-    max-width: 400px;
-    margin: 0 auto;
-    border-radius: 0;
-    border: 1px solid #2f293a;
-}
-.page-card-head h4 {
-    margin-top: 1rem;
-    font-size: var(--text-xl);
-    font-weight: var(--weight-semibold);
-    letter-spacing: 0.01em;
-    color: #e9dfdf;
-}
-.for-login .page-card .page-card-body input{
-    /*color: var(--text-color);
-    font-size: var(--text-base);
-    font-weight: var(--weight-regular);
-    letter-spacing: 0.02em;
-    background-color: var(--control-bg);
-    margin-bottom: 1rem;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;*/
-    /*width: 100%;
-    padding: 10px 30px;
-    margin-bottom: 10px;
-    outline: none;
-    border: none;
-    font-size: 1em;
-    background:rgba(0, 0, 0, 0.1);
-    border: 2px solid white;
-    border-radius: 30px;
-    color:#fff;*/
-}*/
-.page-card-head{
-/*        margin-left:420px ;*/
-          display: none;
+@media only screen and (max-width: 768px){
+    .side-image{
+        position:relative;
+        display:none;
+        border-radius: 10px 10px 0 0;
     }
-}
-.navbar-light {
-    border-bottom: 1px solid rgb(226, 226, 226);
-    background: white;
-    margin: 0;
-    width: 100%;
-}
-@media (max-width: 992px)
-
-.navbar {
-/*    padding: 0px 1rem;*/
-}
-
-.navbar {
-    margin: 0px;
-    padding: 0px;
-}
-
-.navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: -50px;
-/*    padding: 1rem;*/
-    width: 100%;
-}
-.forgot-password-message a{
-    width: 100%;
-    display: flex;
-/*    margin-top: 10px;*/
-    margin-left: 90px;
-    color: black;
-}
-@media only screen and (max-width:600px){
-    .box{
-        margin-left:8px ;
-        width:400px;
-        height: 630px;
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
     }
-    .page-card-head{
-/*        margin-left:420px ;*/
-          display: none;
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
     }
-    .page_content {
-    min-height: 80vh;
-}
-.email-field{
-    margin-top: 100px;
-}
-}
+    .text p, i{
+        font-size: 16px;
+    }
+    .row{
+        max-width:420px;
+        width: 100%;
 
-</style>
+    }
+    .input-box{
+        max-width:200px;
+    }
+    #email_li{
+        position: relative;
+    left: 80px;
+    }
+    
+}
+/* @media only screen and (max-width:470px){
 
+} */
+    </style>
 </head>
-    <div class="box">
-        <div class="login">
-            <form class="loginbox" id="loginbox">
-
-                <!-- <h2><i class="fa-solid fa-right-to-bracket"></i> &nbsp;&nbsp;Login&nbsp;&nbsp;<i class="fa-solid fa-heart"></i></h2> -->
-                <h2 class="heading-signin" ><i class="fa-solid fa-right-to-bracket"></i> &nbsp;&nbsp;SIGN IN</h2>
-                <label class="form-label" for="login_email">{{ login_label or _("Email")}}</label>
-            <div class="inputgroup">
-                <input type="text" id="login_email" placeholder="{% if login_name_placeholder %}{{ login_name_placeholder }}{% else %}{{ _('vichu@example.com') }}{% endif %}"required autofocus autocomplete="username">
-                <div class="error"></div>
-            </div>
-            <label class="form-label" for="login_password">{{ _("Password") }}</label>
-            <div class="inputgroup">
-                <input type="password" id="login_password" placeholder="•••••"autocomplete="current-password" required>
-                <div class="error"></div>
-            </div>
-            
-            <!-- <button type="submit">Sign in</button> -->
-            <div class="group">
-                <p class="forgot-password-message">
-        <a href="#forgot">{{ _("Forgot Password?") }}</a>
-    </p>
-            </div>
-            {% endif %}
-            <div class="page-card-actions">
-                    {% if not disable_user_pass_login %}
-            <button type="submit"><span>
-                {{ _("Sign in") }}</span>
-            </button>
-                {% endif %}
-                {% if ldap_settings and ldap_settings.enabled %}
-            <button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
-                {{ _("Login with LDAP") }}
-            </button>
-                {% endif %}
+<body>
+  <div class="wrapper">
+    <div class="main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+                       
+             
+                
+                <!-- <img src="main_page_1.gif" alt=""> -->
+                <div class="text">
+                    <!-- <p>Join the community of developers <i>nush</i></p> -->
                 </div>
-                {% endmacro %}
-                {% block head_include %}
-                {{ include_style('login.bundle.css') }}
-                {% endblock %}
+                
+            </div>
+
+            <div class="col-md-6 right">
+                
+                <div class="input-box">
+                   
+                    <div class="input-box">
+                   
+                        <header>Login</header>
+                        <div class="input-field">
+                             <input type="text" class="input"  id="login_email"  placeholder="{% if login_name_placeholder %}{{ login_name_placeholder  }}{% endif %}"required autocomplete="off">
+                             <label for="email">{{ login_label or _("Email")}}</label> 
+                         </div> 
+                        <div class="input-field">
+                             <input type="password" class="input"  id="login_password" autocomplete="current-password"required>
+                             <label for="pass">{{ _("Password") }}</label>
+                         </div> 
+                        <div class="input-field">
+                             
+                                 <input type="submit" class="submit" value="Login">
+                        </div> 
+                        
+                     </div>  
+                    <p class="forgot-password-message">
+                        <a href="#forgot" class="forget">{{ _("Forgot Password?") }}</a>
+                    </p>
+                </div>
+                {% endif %}
+                <!-- <div class="page-card-actions">
+                    {% if not disable_user_pass_login %}
+                    <button class="btn btn-sm btn-primary btn-block btn-login" type="submit">
+                        {{ _("Login") }}</button>
+                    {% endif %}
+                    {% if ldap_settings and ldap_settings.enabled %}
+                    <button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
+                        {{ _("Login with LDAP") }}</button>
+                    {% endif %}
+                </div> -->
+                   {% endmacro %}
+
+{% block head_include %}
+{{ include_style('login.bundle.css') }}
+{% endblock %}
 
 
-<!-- {% macro logo_section(title=null) %}
+{% macro logo_section(title=null) %}
 <div class="page-card-head">
     <img class="app-logo" src="{{ logo }}">
     {% if title %}
@@ -413,9 +288,9 @@ button:hover span {
     <h4>{{ _('Login to {0}').format(app_name or _("Frappe")) }}</h4>
     {% endif %}
 </div>
-{% endmacro %} -->
+{% endmacro %}
 
-<!-- {% block page_content %} -->
+{% block page_content %}
 <!-- {{ for_test }} -->
 <div>
     <noscript>
@@ -426,17 +301,17 @@ button:hover span {
         </div>
     </noscript>
     <section class='for-login'>
-        {{ logo_section() }}
-        <div class="login-content">
+        <!-- {{ logo_section() }} -->
+        <div class="login-content ">
             <form class="form-signin form-login" role="form">
                 {%- if social_login or login_with_email_link -%}
                 <div class="page-card-body">
-                    <form class="form-signin form-login" role="form">
-                        {{ email_login_body() }}
-                    </form>
+                        <form class="form-signin form-login" role="form">
+                            {{ email_login_body() }}
+                        </form>
                     <div class="social-logins text-center">
                         {% if not disable_user_pass_login or (ldap_settings and ldap_settings.enabled) %}
-                        <p class="text-muted login-divider">{{ _("or") }}</p>
+                        <p class="text-muted login-divider" id="or">{{ _("or") }}</p>
                         {% endif %}
                         <div class="social-login-buttons">
                             {% for provider in provider_logins %}
@@ -506,9 +381,11 @@ button:hover span {
 
     </section>
 
+    
+
     <section class='for-forgot'>
         {{ logo_section('Forgot Password') }}
-        <div class="login-content">
+        <div class="login-content page-card">
             <form class="form-signin form-forgot hide" role="form">
                 <div class="page-card-body">
                     <div class="email-field">
@@ -540,7 +417,7 @@ button:hover span {
 
     <section class='for-login-with-email-link'>
             {{ logo_section('Login With Email Link') }}
-        <div class="login-content">
+        <div class="login-content page-card">
             <form class="form-signin form-login-with-email-link hide" role="form">
                 <div class="page-card-body">
                     <div class="email-field">
@@ -575,9 +452,39 @@ button:hover span {
 {% endblock %}
 
 {% block sidebar %}{% endblock %}
+                </div>  
             </div>
         </div>
-    </form>
     </div>
 </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('loginForm');
+
+            form.addEventListener('submit', function (event) {
+                // Prevent the form from submitting
+                event.preventDefault();
+
+                // Validate the form
+                if (validateForm()) {
+                    // Form is valid, you can submit it or perform other actions
+                    alert('Form submitted successfully!');
+                    // Uncomment the line below to submit the form programmatically
+                    // form.submit();
+                } else {
+                    // Form is invalid, display an error message or take other actions
+                    alert('Please fill in all fields.');
+                }
+            });
+
+            function validateForm() {
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('pass').value;
+
+                // Simple validation: Check if email and password are not empty
+                return email.trim() !== '' && password.trim() !== '';
+            }
+        });
+    </script>
+</body>
 </html>
