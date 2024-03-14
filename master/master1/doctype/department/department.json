@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 13:46:04.907369",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_8llj",
+  "code",
+  "name1",
+  "description",
+  "plant",
+  "incharge_name",
+  "incharge_email",
+  "incharge_mobile",
+  "status",
+  "created_by",
+  "created_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_8llj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "incharge_name",
+   "fieldtype": "Data",
+   "label": "Incharge Name"
+  },
+  {
+   "fieldname": "incharge_email",
+   "fieldtype": "Data",
+   "label": "Incharge Email"
+  },
+  {
+   "fieldname": "incharge_mobile",
+   "fieldtype": "Data",
+   "label": "Incharge Mobile"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By",
+   "reqd": 1
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Data",
+   "label": "Created Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 15:33:42.697308",
+ "modified_by": "Administrator",
+ "module": "master1",
+ "name": "Department",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
