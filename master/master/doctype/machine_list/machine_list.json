@@ -53,7 +53,7 @@
   },
   {
    "fieldname": "machine_description",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Machine Description",
    "reqd": 1
@@ -85,7 +85,7 @@
   },
   {
    "fieldname": "supplier__service_address",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "Supplier / Service Address",
    "reqd": 1
   },
@@ -161,7 +161,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 16:37:53.643825",
+ "modified": "2024-03-15 10:46:12.087759",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",
