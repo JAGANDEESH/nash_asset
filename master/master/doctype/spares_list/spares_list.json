@@ -31,9 +31,9 @@
   },
   {
    "fieldname": "uom",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "UOM",
-   "options": "Number\nBar",
+   "options": "UOM",
    "reqd": 1
   },
   {
@@ -71,7 +71,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 10:42:11.289922",
+ "modified": "2024-03-15 13:22:09.141115",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Spares List",
