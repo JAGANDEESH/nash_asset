@@ -39,7 +39,8 @@
   {
    "fieldname": "checklist",
    "fieldtype": "Table",
-   "options": "Check Lists Child"
+   "options": "Check Lists Child",
+   "reqd": 1
   },
   {
    "fieldname": "checklist_description",
@@ -60,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 13:08:34.974471",
+ "modified": "2024-03-16 11:11:06.931585",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Check List",
