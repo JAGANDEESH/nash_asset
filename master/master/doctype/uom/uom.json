@@ -20,25 +20,31 @@
   {
    "fieldname": "uom_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "UOM Code",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "uom_name",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "UOM Name",
-   "options": "Number\nBar"
+   "options": "Number\nBar",
+   "reqd": 1
   },
   {
    "fieldname": "uom_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "UOM Status",
-   "options": "Active\nInactive"
+   "options": "Active\nInactive",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-16 11:08:44.598000",
+ "modified": "2024-03-16 11:13:04.676190",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "UOM",
