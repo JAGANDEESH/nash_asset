@@ -45,9 +45,10 @@
   },
   {
    "fieldname": "plant",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plant",
+   "options": "Plant",
    "reqd": 1
   },
   {
@@ -86,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 15:33:42.697308",
+ "modified": "2024-03-15 13:12:40.247611",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Department",

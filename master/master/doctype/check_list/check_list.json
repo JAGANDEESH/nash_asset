@@ -50,17 +50,17 @@
   },
   {
    "fieldname": "machine_type_name",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Machine Type Name",
-   "options": "Press Machine - 01\nPress Machine - 02\nWelding Machine - 01\nPower Coating - 01\nPower Coating - 02\nPower Coating - 03\nPower Coating - 04\nPneumatic Press - 01\nPneumatic Press - 02",
+   "label": "M/C Types",
+   "options": "Machine Type",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 15:08:00.469189",
+ "modified": "2024-03-15 13:08:34.974471",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Check List",
