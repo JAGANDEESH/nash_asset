@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:shift_code",
  "creation": "2024-03-14 14:18:28.068915",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,8 +12,6 @@
   "shift_incharge",
   "shift_start_time",
   "shift_end_time",
-  "created_by",
-  "created_date",
   "status"
  ],
  "fields": [
@@ -25,7 +24,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Shift Code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "shift_name",
@@ -52,31 +52,20 @@
    "label": "Shift End Time"
   },
   {
-   "fieldname": "created_by",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Created By",
-   "reqd": 1
-  },
-  {
-   "fieldname": "created_date",
-   "fieldtype": "Data",
-   "label": "Created Date",
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Status",
+   "options": "Active\nInactive",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 15:10:32.689735",
+ "modified": "2024-03-19 12:02:51.415618",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "shift",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

@@ -140,11 +140,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 15:24:01.106942",
+ "modified": "2024-03-19 12:31:17.202728",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Company",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
