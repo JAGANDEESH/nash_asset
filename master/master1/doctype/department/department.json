@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:code",
  "creation": "2024-03-14 13:46:04.907369",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -27,7 +28,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "name1",
@@ -45,10 +47,10 @@
   },
   {
    "fieldname": "plant",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plant",
-   "reqd": 1
+   "options": "Plant"
   },
   {
    "fieldname": "incharge_name",
@@ -67,8 +69,9 @@
   },
   {
    "fieldname": "status",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Status",
+   "options": "Active\nInactive",
    "reqd": 1
   },
   {
@@ -79,17 +82,18 @@
   },
   {
    "fieldname": "created_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Created Date",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 15:33:42.697308",
+ "modified": "2024-03-19 11:39:21.709364",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Department",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

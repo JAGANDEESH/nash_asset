@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "format:MT{####}",
  "creation": "2024-03-14 15:13:55.589542",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -33,16 +32,17 @@
   },
   {
    "fieldname": "plant",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Plant",
-   "reqd": 1
+   "label": "Plant Name",
+   "options": "Plant"
   },
   {
    "fieldname": "status",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
+   "options": "Active\nInactive",
    "reqd": 1
   },
   {
@@ -53,17 +53,17 @@
   },
   {
    "fieldname": "created_date",
-   "fieldtype": "Data",
+   "fieldtype": "Datetime",
    "label": "Created Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 15:26:41.795553",
+ "modified": "2024-03-19 12:27:04.060772",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Machine Type",
- "naming_rule": "Set by user",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
