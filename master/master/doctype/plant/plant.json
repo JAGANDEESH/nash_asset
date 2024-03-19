@@ -138,11 +138,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-19 13:46:42.361063",
+ "modified": "2024-03-19 17:18:58.816493",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plant",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
