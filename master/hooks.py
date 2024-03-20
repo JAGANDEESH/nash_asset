@@ -230,6 +230,8 @@ fixtures = [
     "Company",
     "Plant",
     "Location",
-    "Department"
+    "Department",
+    "shift",
+    "Machine Type"
 ]
 
