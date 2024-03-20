@@ -21,14 +21,14 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
    "fieldname": "mc_types",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "M/C Types",
-   "options": "Press Machine-01\nPress Machine-02\nWelding Machine-01\nPowder Coating-01\nPowder Coating-02\nPowder Coating-03\nPowder Coating-04\npneumatic Press-01\npneumatic Press-02"
+   "options": "Machine Type"
   },
   {
    "fieldname": "amended_from",
@@ -50,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 15:56:35.433674",
+ "modified": "2024-03-15 13:23:20.444593",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "BOM List",

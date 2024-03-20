@@ -26,32 +26,39 @@
   {
    "fieldname": "stage",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Stage",
-   "options": "Low\nMedium\nHigh"
+   "options": "Low\nMedium\nHigh",
+   "reqd": 1
   },
   {
    "fieldname": "duration_one",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Duration One",
-   "options": "Days\nHours\nMinutes"
+   "options": "Days\nHours\nMinutes",
+   "reqd": 1
   },
   {
    "fieldname": "role_one",
    "fieldtype": "Select",
    "label": "Role One",
-   "options": "Super Admin\nOperator\nRequestor\nAdmin"
+   "options": "Super Admin\nOperator\nRequestor\nAdmin",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Active\nInactive"
+   "options": "Active\nInactive",
+   "reqd": 1
   },
   {
    "fieldname": "duration_two",
    "fieldtype": "Select",
    "label": "Duration Two",
-   "options": "Days\nHours\nMinutes"
+   "options": "Days\nHours\nMinutes",
+   "reqd": 1
   },
   {
    "fieldname": "role_two",
@@ -61,11 +68,18 @@
   },
   {
    "fieldname": "int_eijl",
-   "fieldtype": "Int"
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Enter the duration",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "int_tjwl",
-   "fieldtype": "Int"
+   "fieldtype": "Int",
+   "label": "Enter the duration",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "section_break_4uqx",
@@ -98,7 +112,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 16:21:07.966155",
+ "modified": "2024-03-16 11:12:48.429034",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Escalation Matrixs",

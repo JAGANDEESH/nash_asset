@@ -53,17 +53,17 @@
   },
   {
    "fieldname": "machine_description",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Machine Description",
    "reqd": 1
   },
   {
    "fieldname": "type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Type",
-   "options": "Press Machine - 01\nPress Machine - 02\nWelding Machine-01\nPowder Coating-01\nPowder Coating-01\nPneumatic Press-01"
+   "options": "Machine Type"
   },
   {
    "fieldname": "makemodelcapacity",
@@ -85,7 +85,7 @@
   },
   {
    "fieldname": "supplier__service_address",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "Supplier / Service Address",
    "reqd": 1
   },
@@ -152,16 +152,16 @@
   },
   {
    "fieldname": "plant",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Plant",
-   "options": "CHN Plant A\nCHN Plant B\nPIA Unit-III\nNash Products",
+   "options": "Plant",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-14 16:37:53.643825",
+ "modified": "2024-03-15 13:31:10.423143",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",

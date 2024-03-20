@@ -50,7 +50,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "\nOpen\nClosed"
+   "options": "Open\nClosed"
   },
   {
    "fieldname": "profile",
@@ -61,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-14 15:20:25.142368",
+ "modified": "2024-03-15 10:49:43.673479",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Check Lists Child",
