@@ -4,6 +4,10 @@ app_publisher = "mazework"
 app_description = "nash_asset"
 app_email = "maze@gmail.com"
 app_license = "mit"
+fixtures = [
+    "Company",
+    "UOM",
+]
 # required_apps = []
 
 # Includes in <head>
@@ -226,6 +230,4 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-fixtures = [
-    "Company"
-]
+
