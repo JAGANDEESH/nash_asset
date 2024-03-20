@@ -1,0 +1,62 @@
+[
+ {
+  "created_by": "admin",
+  "created_date": "2024-03-04 13:00:50",
+  "description": "SSC Press Machine",
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "Press Machine - 01",
+  "modified": "2024-03-14 15:20:18.671142",
+  "name": "Press Machine - 01",
+  "plant": "Nash Products",
+  "status": "Active"
+ },
+ {
+  "created_by": "admin",
+  "created_date": "2023-05-23 10:54:12",
+  "description": "\nTapping",
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "Pneumatic Press - 02",
+  "modified": "2024-03-14 15:21:36.073481",
+  "name": "Pneumatic Press - 02",
+  "plant": "CHN Plant A",
+  "status": "Active"
+ },
+ {
+  "created_by": "admin",
+  "created_date": "2023-05-23 10:53:49",
+  "description": "Reviting",
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "Press Machine - 01",
+  "modified": "2024-03-14 15:23:12.110013",
+  "name": "Pneumatic Press - 01",
+  "plant": "CHN Plant A",
+  "status": "Active"
+ },
+ {
+  "created_by": "admin",
+  "created_date": "2023-05-23 10:54:12",
+  "description": "Tapping",
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "Pneumatic Press - 02",
+  "modified": "2024-03-14 15:25:25.023666",
+  "name": "c05bc61b80",
+  "plant": "CHN Plant A",
+  "status": "Active"
+ },
+ {
+  "created_by": " admin",
+  "created_date": "2023-05-23 10:48:01",
+  "description": "Curing Booth",
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "Powder Coating - 04",
+  "modified": "2024-03-14 15:30:04.906185",
+  "name": "Powder Coating - 04",
+  "plant": "CHN Plant A",
+  "status": "Active"
+ }
+]

@@ -1,6 +1,6 @@
 [
  {
-  "code": "0100-Production",
+  "code": "01000-Production",
   "created_by": " admin",
   "created_date": "2024-03-04",
   "description": " Press Shop Production Team",
@@ -16,7 +16,7 @@
   "status": "Active"
  },
  {
-  "code": "0100 - Production",
+  "code": "0100-Production",
   "created_by": " admin",
   "created_date": "2024-03-04",
   "description": " Press Shop Production Team",
@@ -32,7 +32,7 @@
   "status": "Active"
  },
  {
-  "code": " 5100 _A3",
+  "code": "5100 _A3",
   "created_by": "admin",
   "created_date": "2023-05-12",
   "description": " Production Medium Stamping Cell",
@@ -64,7 +64,7 @@
   "status": " Active"
  },
  {
-  "code": " 5100_A1",
+  "code": "5100_a1",
   "created_by": "admin",
   "created_date": "2023-05-12",
   "description": "Quality Control and Assurance",
