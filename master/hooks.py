@@ -229,3 +229,8 @@ app_license = "mit"
 fixtures = [
     "Company"
 ]
+fixtures=[
+    "Department",
+    "shift",
+    "Machine Type"
+]
