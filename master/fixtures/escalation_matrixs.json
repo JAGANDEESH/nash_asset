@@ -1,0 +1,30 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Escalation Matrixs",
+  "duration_one": "Days",
+  "duration_two": "Days",
+  "int_eijl": 882,
+  "int_tjwl": 0,
+  "modified": "2024-03-14 16:15:23.937499",
+  "name": "c51c87cd89",
+  "role_one": "Requestor",
+  "role_two": "Super Admin",
+  "stage": "Medium",
+  "status": "Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Escalation Matrixs",
+  "duration_one": "Hours",
+  "duration_two": "Days",
+  "int_eijl": 123,
+  "int_tjwl": 0,
+  "modified": "2024-03-14 16:22:30.050219",
+  "name": "ESM0001",
+  "role_one": "Super Admin",
+  "role_two": "Super Admin",
+  "stage": "Low",
+  "status": "Active"
+ }
+]

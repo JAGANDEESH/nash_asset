@@ -1,6 +1,18 @@
 [
  {
-  "created_by": "admin",
+  "created_by": null,
+  "created_date": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Machine Type",
+  "machine_type": "awerfwe",
+  "modified": "2024-03-19 13:03:16.868053",
+  "name": "awerfwe",
+  "plant": null,
+  "status": "Active"
+ },
+ {
+  "created_by": "Administrator",
   "created_date": "2024-03-04 13:00:50",
   "description": "SSC Press Machine",
   "docstatus": 0,
@@ -12,7 +24,7 @@
   "status": "Active"
  },
  {
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-23 10:54:12",
   "description": "\nTapping",
   "docstatus": 0,
@@ -24,31 +36,31 @@
   "status": "Active"
  },
  {
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-23 10:53:49",
   "description": "Reviting",
   "docstatus": 0,
   "doctype": "Machine Type",
-  "machine_type": "Press Machine - 01",
+  "machine_type": "Pneumatic Press - 01",
   "modified": "2024-03-14 15:23:12.110013",
   "name": "Pneumatic Press - 01",
   "plant": "CHN Plant A",
   "status": "Active"
  },
  {
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-23 10:54:12",
   "description": "Tapping",
   "docstatus": 0,
   "doctype": "Machine Type",
-  "machine_type": "Pneumatic Press - 02",
+  "machine_type": "c05bc61b80",
   "modified": "2024-03-14 15:25:25.023666",
   "name": "c05bc61b80",
   "plant": "CHN Plant A",
   "status": "Active"
  },
  {
-  "created_by": " admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-23 10:48:01",
   "description": "Curing Booth",
   "docstatus": 0,
