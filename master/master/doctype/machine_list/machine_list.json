@@ -10,16 +10,19 @@
   "machine_description",
   "type",
   "makemodelcapacity",
+  "column_break_g3tu",
   "specification",
   "commission_date",
   "supplier__service_address",
   "service_contact_person",
   "service_contact_numbe",
+  "column_break_unxl",
   "critical_spares_bom",
   "power_consumption",
   "required_air",
   "required_gas",
   "required_oilgrade",
+  "column_break_6zuj",
   "total_shot",
   "remaining_shots",
   "location",
@@ -156,12 +159,24 @@
    "label": "Plant",
    "options": "Plant",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_g3tu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_unxl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6zuj",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 13:31:10.423143",
+ "modified": "2024-03-16 11:11:40.893187",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",

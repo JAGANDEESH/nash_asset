@@ -1,7 +1,23 @@
 [
  {
+  "code": "11",
+  "created_by": "Administrator",
+  "created_date": "2024-03-28",
+  "description": "asdfa",
+  "docstatus": 0,
+  "doctype": "Department",
+  "incharge_email": null,
+  "incharge_mobile": null,
+  "incharge_name": null,
+  "modified": "2024-03-19 11:41:28.174704",
+  "name": "11",
+  "name1": "dfas",
+  "plant": null,
+  "status": "Active"
+ },
+ {
   "code": "01000-Production",
-  "created_by": " admin",
+  "created_by": "Administrator",
   "created_date": "2024-03-04",
   "description": " Press Shop Production Team",
   "docstatus": 0,
@@ -17,7 +33,7 @@
  },
  {
   "code": "0100-Production",
-  "created_by": " admin",
+  "created_by": "Administrator",
   "created_date": "2024-03-04",
   "description": " Press Shop Production Team",
   "docstatus": 0,
@@ -33,7 +49,7 @@
  },
  {
   "code": "5100 _A3",
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-12",
   "description": " Production Medium Stamping Cell",
   "docstatus": 0,
@@ -49,7 +65,7 @@
  },
  {
   "code": "5100_A2",
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-12",
   "description": "Production Management - HSC",
   "docstatus": 0,
@@ -65,7 +81,7 @@
  },
  {
   "code": "5100_a1",
-  "created_by": "admin",
+  "created_by": "Administrator",
   "created_date": "2023-05-12",
   "description": "Quality Control and Assurance",
   "docstatus": 0,

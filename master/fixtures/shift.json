@@ -2,6 +2,18 @@
  {
   "docstatus": 0,
   "doctype": "shift",
+  "modified": "2024-03-19 12:03:21.001972",
+  "name": "22",
+  "shift_code": "22",
+  "shift_end_time": null,
+  "shift_incharge": "sdaf",
+  "shift_name": "gdsaf",
+  "shift_start_time": null,
+  "status": "Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
   "modified": "2024-03-14 14:57:36.873162",
   "name": "CHNPLANTA",
   "shift_code": "CHNPLANTA",

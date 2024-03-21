@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"AOgp-44W74\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Checklist\",\"col\":4}}]",
  "creation": "2024-03-14 12:08:34.964764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,11 +13,16 @@
  "is_hidden": 0,
  "label": "Masters",
  "links": [],
- "modified": "2024-03-14 13:33:50.665052",
+ "modified": "2024-03-21 10:41:51.922294",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Masters",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "Total Checklist",
+   "number_card_name": "Checklist Number Card"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,

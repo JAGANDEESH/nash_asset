@@ -1,0 +1,26 @@
+[
+ {
+  "amended_from": null,
+  "checklist": [
+   {
+    "action_to_be_taken": "lifkas",
+    "check_for": "value",
+    "check_point": "fdoki",
+    "desc": "slkfl",
+    "parent": "02",
+    "parentfield": "checklist",
+    "parenttype": "Check List",
+    "profile": null,
+    "standard_spec__value": "flasijf",
+    "status": "Open"
+   }
+  ],
+  "checklist_description": "liandlfk",
+  "checklist_number": "02",
+  "docstatus": 1,
+  "doctype": "Check List",
+  "machine_type_name": "Press Machine - 01",
+  "modified": "2024-03-21 10:22:20.006141",
+  "name": "02"
+ }
+]
