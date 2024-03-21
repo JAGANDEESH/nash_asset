@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 14:57:36.873162",
+  "name": "CHNPLANTA",
+  "shift_code": " CHNPLANTA",
+  "shift_end_time": "4:30 PM",
+  "shift_incharge": "Ravindran.R",
+  "shift_name": " General Shift",
+  "shift_start_time": "8:00 AM",
+  "status": " Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 15:00:29.617749",
+  "name": "CHNPLANTA1",
+  "shift_code": "CHNPLANTA1",
+  "shift_end_time": "2:30 PM",
+  "shift_incharge": "Ravindran.R",
+  "shift_name": "First Shift",
+  "shift_start_time": "6:00 AM",
+  "status": " Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 15:04:05.037658",
+  "name": "CHNPLANTA2",
+  "shift_code": " CHNPLANTA2",
+  "shift_end_time": " 1:00 AM",
+  "shift_incharge": " Sundhar",
+  "shift_name": "Second Shift",
+  "shift_start_time": " 4:30 PM",
+  "status": "Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 15:05:22.102511",
+  "name": "CHNPLANTA3",
+  "shift_code": "CHNPLANTA3",
+  "shift_end_time": "8:00 AM",
+  "shift_incharge": "Sundhar",
+  "shift_name": "Third Shift",
+  "shift_start_time": " 1:00 AM",
+  "status": "Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 15:07:07.193126",
+  "name": "NPGNR100",
+  "shift_code": "NPGNR100",
+  "shift_end_time": "4:30 PM",
+  "shift_incharge": "Sathish Nayak",
+  "shift_name": "NP General Shift",
+  "shift_start_time": "8:30 AM",
+  "status": "Active"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "shift",
+  "modified": "2024-03-14 15:09:18.427154",
+  "name": "fea6b24c64",
+  "shift_code": " NPGNR100",
+  "shift_end_time": " 4:30 PM",
+  "shift_incharge": " Sathish Nayak",
+  "shift_name": " NP General Shift",
+  "shift_start_time": " 8:30 AM",
+  "status": " Active"
+ }
+]

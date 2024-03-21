@@ -1,0 +1,16 @@
+[
+ {
+  "amended_from": null,
+  "code": "5100A",
+  "created_by": "vishnu",
+  "created_date": "2024-03-19",
+  "docstatus": 1,
+  "doctype": "Location",
+  "location": "WIP - Press Shop SSC",
+  "location_code": "1005 - SSC",
+  "modified": "2024-03-19 17:32:49.949322",
+  "name": "1005 - SSC",
+  "plant_name": "CHN Plant A",
+  "status": "Active"
+ }
+]
