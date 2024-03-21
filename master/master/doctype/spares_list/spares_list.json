@@ -8,9 +8,11 @@
  "field_order": [
   "item_code",
   "item_description",
+  "column_break_vx8c",
   "uom",
   "mfr_part_no",
   "initial_qty",
+  "column_break_uiln",
   "remaining_qty",
   "used_qty",
   "amended_from"
@@ -66,12 +68,20 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_vx8c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uiln",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 13:22:09.141115",
+ "modified": "2024-03-16 11:07:16.570071",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Spares List",
