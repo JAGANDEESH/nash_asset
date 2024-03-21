@@ -233,6 +233,9 @@ fixtures = [
     # "Department",
     # "shift",
     # "Machine Type",
+    # "Check List",
+    # "UOM",
+    # "Escalation Matrixs", 
     "Spares List",
     "BOM List",
     "Machine List"
