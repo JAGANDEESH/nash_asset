@@ -1,0 +1,23 @@
+[
+ {
+  "amended_from": null,
+  "company_address": "#115/3, 4th Floor, M.L. Chambers,\n6th Main, Yeshwanthpur Indl Suburb II Stage,\nBangalore -560022.",
+  "company_city": "Chennai",
+  "company_code": "1000",
+  "company_country": "India",
+  "company_email": "info@nash.com",
+  "company_gstinno": "1233566",
+  "company_logo": "/files/Screenshot from 2024-02-28 18-40-06.png",
+  "company_mobile": "+91-9632547722",
+  "company_name": "Nash Industries",
+  "company_phone": "+91-9632547722",
+  "company_state": "Tamil Nadu",
+  "company_status": "Active",
+  "company_website": "www.nash.com",
+  "docstatus": 1,
+  "doctype": "Company",
+  "modified": "2024-03-19 17:27:50.251721",
+  "name": "Nash Industries",
+  "pincode": "560022"
+ }
+]

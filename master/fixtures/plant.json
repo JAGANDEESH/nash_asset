@@ -1,0 +1,23 @@
+[
+ {
+  "amended_from": null,
+  "city": "Chennai",
+  "code": "5100A",
+  "company_name": "Nash Industries",
+  "country": "India",
+  "created_by": "vishnu",
+  "created_date": "2024-03-19",
+  "docstatus": 1,
+  "doctype": "Plant",
+  "incharge": "Mr.Ravindran.R",
+  "incharge_email": "ravindran.r@nashindia.com",
+  "incharge_mobile": "+91-9768054123",
+  "modified": "2024-03-19 17:30:29.674063",
+  "name": "5100A",
+  "name1": "CHN Plant A",
+  "plant_address": "125 127 A, Villivakkam, Chennai, Tamil Nadu 600049",
+  "plant_incharge": "Mr.",
+  "state": "Tamil Nadu",
+  "status": "Active"
+ }
+]
