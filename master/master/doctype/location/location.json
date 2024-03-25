@@ -38,8 +38,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plant Code",
-   "options": "Plant",
-   "reqd": 1
+   "options": "Plant"
   },
   {
    "fieldname": "location",
@@ -51,10 +50,10 @@
   {
    "fetch_from": "code.name1",
    "fieldname": "plant_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plant Name",
-   "reqd": 1
+   "options": "Plant"
   },
   {
    "fieldname": "status",
@@ -71,7 +70,7 @@
   },
   {
    "fieldname": "created_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Created Date"
   },
   {
@@ -93,7 +92,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-19 12:06:18.812917",
+ "modified": "2024-03-25 13:54:38.366104",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Location",
