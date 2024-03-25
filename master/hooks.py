@@ -227,17 +227,20 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 fixtures = [
-    # "Company",
-    # "Plant",
-    # "Location",
-    # "Department",
-    # "shift",
-    # "Machine Type",
-    # "Check List",
-    # "UOM",
-    # "Escalation Matrixs", 
+    "Company",
+    "Plant",
+    "Location",
+    "Department",
+    "shift",
+    "Machine Type",
+    "Check List",
+    "UOM",
+    "Escalation Matrixs", 
     "Spares List",
     "BOM List",
-    "Machine List"
+    "Machine List",
+    "PM NOTIFICATION LIST",
+    "PM WORK ORDER",
+    "PM SCHEDULE"
 ]
 

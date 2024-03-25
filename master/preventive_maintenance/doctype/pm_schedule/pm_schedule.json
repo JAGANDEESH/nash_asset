@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-03-25 12:21:33.720989",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gfdm",
+  "machine_number",
+  "machine_type",
+  "pm_schedule_name",
+  "description",
+  "frequency",
+  "checklist_number",
+  "plan_date",
+  "created_by",
+  "created_date",
+  "approved_by",
+  "approved_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gfdm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Data",
+   "label": "Machine Number"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Data",
+   "label": "Machine Type"
+  },
+  {
+   "fieldname": "pm_schedule_name",
+   "fieldtype": "Data",
+   "label": "PM Schedule Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Data",
+   "label": "Frequency"
+  },
+  {
+   "fieldname": "checklist_number",
+   "fieldtype": "Data",
+   "label": "Checklist Number"
+  },
+  {
+   "fieldname": "plan_date",
+   "fieldtype": "Date",
+   "label": "Plan Date"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Date",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Date",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Date",
+   "label": "Approved By"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-25 12:26:30.157407",
+ "modified_by": "Administrator",
+ "module": "PREVENTIVE MAINTENANCE",
+ "name": "PM SCHEDULE",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-03-25 12:28:49.330106",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mo21",
+  "notification_id",
+  "machine_number",
+  "machine_type",
+  "schedule_name",
+  "assigned_department",
+  "description",
+  "plan_date",
+  "frequency",
+  "check_list_number",
+  "plant"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mo21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notification_id",
+   "fieldtype": "Data",
+   "label": "\tNotification Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Data",
+   "label": "Machine Number"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Data",
+   "label": "Machine Type"
+  },
+  {
+   "fieldname": "schedule_name",
+   "fieldtype": "Data",
+   "label": "Schedule Name"
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Data",
+   "label": "Assigned Department"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "plan_date",
+   "fieldtype": "Date",
+   "label": "Plan Date"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Data",
+   "label": "Frequency"
+  },
+  {
+   "fieldname": "check_list_number",
+   "fieldtype": "Data",
+   "label": "Check List Number"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "label": "Plant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-25 12:58:14.679294",
+ "modified_by": "Administrator",
+ "module": "PREVENTIVE MAINTENANCE",
+ "name": "PM NOTIFICATION LIST",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-25 13:39:21.061291",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tyyj",
+  "work_order_number",
+  "work_order_date",
+  "assigned_by",
+  "work_order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tyyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order_number",
+   "fieldtype": "Data",
+   "label": "Work Order Number"
+  },
+  {
+   "fieldname": "work_order_date",
+   "fieldtype": "Date",
+   "label": "Work Order Date"
+  },
+  {
+   "fieldname": "assigned_by",
+   "fieldtype": "Data",
+   "label": "Assigned By"
+  },
+  {
+   "fieldname": "work_order_status",
+   "fieldtype": "Data",
+   "label": "Work Order Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-25 14:06:10.095386",
+ "modified_by": "Administrator",
+ "module": "PREVENTIVE MAINTENANCE",
+ "name": "PM WORK ORDER",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
