@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"AOgp-44W74\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Checklist\",\"col\":4}}]",
+ "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"aQjeh9M8Xu\",\"type\":\"card\",\"data\":{\"card_name\":\"Company Master\",\"col\":4}},{\"id\":\"dWoHu5El8n\",\"type\":\"card\",\"data\":{\"card_name\":\"Machine Master\",\"col\":4}},{\"id\":\"eROKt91aXD\",\"type\":\"card\",\"data\":{\"card_name\":\"Spare Master\",\"col\":4}}]",
  "creation": "2024-03-14 12:08:34.964764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,17 +12,160 @@
  "indicator_color": "green",
  "is_hidden": 0,
  "label": "Masters",
- "links": [],
- "modified": "2024-03-21 10:41:51.922294",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Spare Master",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "BOM List",
+   "link_count": 0,
+   "link_to": "BOM List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "UOM",
+   "link_count": 0,
+   "link_to": "UOM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Escalation Matrixs",
+   "link_count": 0,
+   "link_to": "Escalation Matrixs",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company Master",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plant",
+   "link_count": 0,
+   "link_to": "Plant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Department",
+   "link_count": 0,
+   "link_to": "Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Location",
+   "link_count": 0,
+   "link_to": "Location",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "shift",
+   "link_count": 0,
+   "link_to": "shift",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Machine Master",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Machine List",
+   "link_count": 0,
+   "link_to": "Machine List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Machine Type",
+   "link_count": 0,
+   "link_to": "Machine Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Spares List",
+   "link_count": 0,
+   "link_to": "Spares List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Check List",
+   "link_count": 0,
+   "link_to": "Check List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-25 12:22:15.846810",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Masters",
- "number_cards": [
-  {
-   "label": "Total Checklist",
-   "number_card_name": "Checklist Number Card"
-  }
- ],
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
