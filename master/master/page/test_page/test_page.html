@@ -1,0 +1,137 @@
+<body>
+    <br>
+    <div class="head">
+        <h3 style="color:white">Machine Dashboard</h3>
+        <input type="checkbox" id="checkbox1" checked />
+        <label for="checkbox1">Corrective </label>
+        <input type="checkbox" id="checkbox2" />
+        <label for="checkbox2">Preventive </label>
+    </div>
+    <br>
+    <div class="row g-6 mb-6">
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                <div class="card-body c1">
+                    <div class="row">
+                        <div class="col">
+                            <span class="h6 font-semibold  text-sm d-block mb-2">New</span>
+                            <span id="countElementId1" class="h3 font-bold mb-0">----</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="bg-tertiary icon-shape rounded-circle text-lg ">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                <div class="card-body c2">
+                    <div class="row">
+                        <div class="col">
+                            <span class="h6 font-semibold  text-sm d-block mb-2">Assigned</span>
+                            <span id="countElementId2" class="h3 font-bold mb-0">----</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class=" icon-shape  text-lg rounded-circle">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                <div class="card-body c3">
+                    <div class="row">
+                        <div class="col">
+                            <span class="h6 font-semibold  text-sm d-block mb-2">In progress</span>
+                            <span id="countElementId3" class="h3 font-bold mb-0">----</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class=" icon-shape  text-lg ">
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                <div class="card-body c4">
+                    <div class="row">
+                        <div class="col">
+                            <span class="h6 font-semibold  text-sm d-block mb-2">Reopen</span>
+                            <span id="countElementId4" class="h3 font-bold mb-0">----</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon-shape text-lg">
+                                <i class="fa fa-refresh" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="me">
+        <div class="row g-6 mb-6">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body c5">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold  text-sm d-block mb-2">Completed</span>
+                                <span id="countElementId5" class="h3 font-bold mb-0">----</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="bg-tertiary icon-shape rounded-circle text-lg ">
+                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card shadow border-0">
+                    <div class="card-body c6">
+                        <div class="row">
+                            <div class="col">
+                                <span class="h6 font-semibold  text-sm d-block mb-2">Closed</span>
+                                <span id="countElementId6" class="h3 font-bold mb-0">----</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class=" icon-shape  text-lg rounded-circle">
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row chart">
+        <div class="col-6 line">
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="col-6 pie d-flex align-items-center justify-content-center">
+            <div>
+                <canvas id="myCharts"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
