@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:code",
+ "autoname": "field:name1",
  "creation": "2024-03-14 14:00:01.253178",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -43,7 +43,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Plant Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "country",
@@ -94,7 +95,7 @@
   },
   {
    "fieldname": "created_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Created Date"
   },
   {
@@ -131,14 +132,13 @@
    "fieldname": "company_name",
    "fieldtype": "Link",
    "label": "Company Name",
-   "options": "Company",
-   "reqd": 1
+   "options": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-19 17:18:58.816493",
+ "modified": "2024-03-25 13:51:14.273088",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plant",
@@ -162,5 +162,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "company_name"
+ "title_field": "name1"
 }

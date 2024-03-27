@@ -1,0 +1,207 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2024-03-25 12:35:32.978486",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qfyd",
+  "naming_series",
+  "wo_request_no",
+  "wo_request_date",
+  "wo_type",
+  "department_name",
+  "shift_name",
+  "plant_name",
+  "machine_type",
+  "machine_number",
+  "report_time",
+  "report_by",
+  "status",
+  "column_break_i11u",
+  "breakdown_date",
+  "priority",
+  "required_completion",
+  "problem_description",
+  "column_break_1xk2",
+  "created_by",
+  "created_date",
+  "approved_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qfyd",
+   "fieldtype": "Section Break",
+   "label": "MAINTENANCE TEAM"
+  },
+  {
+   "fetch_from": "amended_from.naming_series",
+   "fieldname": "wo_request_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "WO Request No",
+   "unique": 1
+  },
+  {
+   "fieldname": "wo_request_date",
+   "fieldtype": "Date",
+   "label": "WO Request Date"
+  },
+  {
+   "fieldname": "wo_type",
+   "fieldtype": "Select",
+   "label": "WO Type",
+   "options": "Machine"
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine Number",
+   "options": "Machine List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Link",
+   "label": "Machine Type",
+   "options": "Machine Type"
+  },
+  {
+   "fieldname": "breakdown_date",
+   "fieldtype": "Datetime",
+   "label": "Breakdown Date"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "problem_description",
+   "fieldtype": "Text Editor",
+   "label": "Problem Description"
+  },
+  {
+   "fieldname": "required_completion",
+   "fieldtype": "Datetime",
+   "label": "Required Completion"
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shift Name",
+   "options": "shift",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department Name",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant_name",
+   "fieldtype": "Link",
+   "label": "Plant Name",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "report_time",
+   "fieldtype": "Time",
+   "label": "Report Time",
+   "reqd": 1
+  },
+  {
+   "default": "eval:frappe.session.user",
+   "fieldname": "report_by",
+   "fieldtype": "Data",
+   "label": "Report By"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Data",
+   "label": "Created By"
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Datetime",
+   "label": "Created Date"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nReopen\nInprogress\nAssigned\nCompleted\nclosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_i11u",
+   "fieldtype": "Section Break",
+   "label": "PROBLEM DETAILS"
+  },
+  {
+   "fieldname": "column_break_1xk2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "series",
+   "no_copy": 1,
+   "options": "WO-.#####",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cm Work Order Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-26 11:21:21.942505",
+ "modified_by": "Administrator",
+ "module": "CORRECTIVE MAINTENANCE",
+ "name": "Cm Work Order Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

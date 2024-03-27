@@ -27,7 +27,7 @@
    "fieldname": "code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "code",
+   "label": "Department code",
    "reqd": 1,
    "unique": 1
   },
@@ -35,7 +35,7 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Department Name",
    "reqd": 1
   },
   {
@@ -89,7 +89,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-19 11:39:21.709364",
+ "modified": "2024-03-25 12:56:56.915885",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Department",
