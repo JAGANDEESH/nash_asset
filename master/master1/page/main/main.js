@@ -159,6 +159,6 @@ frappe.require('https://cdn.jsdelivr.net/npm/chart.js', function() {
 		});
 	  }
 	  
-	
-		fetchEntryCount();
+
+	fetchEntryCount();
 	  
