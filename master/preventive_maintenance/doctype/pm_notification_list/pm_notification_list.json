@@ -1,12 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "naming_series:naming_series",
  "creation": "2024-03-25 12:28:49.330106",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_mo21",
+  "naming_series",
   "notification_id",
   "machine_number",
   "machine_type",
@@ -16,18 +17,13 @@
   "plan_date",
   "frequency",
   "check_list_number",
-  "plant"
+  "plant",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "section_break_mo21",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "notification_id",
-   "fieldtype": "Data",
-   "label": "\tNotification Id",
-   "unique": 1
   },
   {
    "fieldname": "machine_number",
@@ -73,15 +69,49 @@
    "fieldname": "plant",
    "fieldtype": "Data",
    "label": "Plant"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PM NOTIFICATION LIST",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "PMN.-.######",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "notification_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Notification ID",
+   "no_copy": 1,
+   "read_only": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 12:58:14.679294",
+ "modified": "2024-03-26 11:22:04.276725",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM NOTIFICATION LIST",
- "naming_rule": "Set by user",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
