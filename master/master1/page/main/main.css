@@ -1,0 +1,144 @@
+.row{
+    padding:15px;
+    border-radius: 30px;
+}
+.c{
+  animation:  card 3s ease forwards;
+
+}
+.card{
+    background-color: #f44336;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      cursor: pointer;
+      /* transform:translateY(-10px); */
+      /* animation-delay: .5s; */ 
+     
+       
+ }
+  .card:hover{
+    /* animation:  card 1s ease forwards; */
+
+    /* animation-delay: .5s; */
+  }
+  .card1{
+    /* border-radius: 20px;  */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #6f42c1;
+    border:none;
+  }
+  .card1:hover{
+    border-radius: 10px;
+    /* box-shadow:10px 8px 10px  rgb(92, 76, 76); */
+    transform:scale(1.1);
+    transition:0.3s ease-in-out;
+    }
+  .card2{
+    /* border-radius: 20px;  */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #2196f3;  */
+    border:none;
+  }
+  .card2:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card3{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #4caf50;
+    border:none;
+  }
+  .card3:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card4{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ff9800;
+    border:none;
+  }
+  .card4:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card5{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: blue; 
+    border:none;
+  }
+  .card5:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card6{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: blue; 
+    border:none;
+  }
+  .card6:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card7{
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: blue; 
+    border:none;
+  }
+  .card7:hover{
+    border-radius: 10px;
+    box-shadow:10px 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+  .card8{
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: blue; 
+    border:none;
+  }
+  .card8:hover{
+    border-radius: 10px;
+    box-shadow:0 8px 10px  rgb(92, 76, 76);
+    transform:scale(1.1);
+    transition:0.5s ease-in-out;
+  }
+.card-body{
+   color: #1abc9c;
+}
+.name{
+    background: #1abc9c;
+    padding:10px;
+    text-align: center;
+}
+.chart{
+  width:800px;
+  height: 500px;
+  
+}
+
+
+@keyframes card{
+    0%{
+        transform:translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity:1 ;
+    }
+}
