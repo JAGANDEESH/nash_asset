@@ -1,137 +1,140 @@
-<body>
-    <br>
-    <div class="head">
-        <h3 style="color:white">Machine Dashboard</h3>
-        <input type="checkbox" id="checkbox1" checked />
-        <label for="checkbox1">Corrective </label>
-        <input type="checkbox" id="checkbox2" />
-        <label for="checkbox2">Preventive </label>
+<link rel="stylesheet" type="text/css" href="./machine_dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@100..900&family=Bree+Serif&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<!-- Side Navigation Menu -->
+
+
+<nav class="navbar1">
+    <div class="navbar1-content">
+            <div class="dashboard">
+    <!-- DASHBOARD -->
+    <div class="dropdown">
+  <span>Dashboard</span>
+  <div class="dropdown-content">
+    <a href="#" class="nav-link">Master Dashboard</a>
+  </div>
+</div>
+<!-- MASTER -->
+<div class="dropdown">
+  <span>MASTER</span>
+  <div class="dropdown-content" id="doctypedropdown">
+    <a href="#" id="#gotoCompanyInfo" data-route="company-info" >Company</a>
+    <a href="#" class="nav-link1" data-doctype="Plant">Plant</a>
+    <a href="#" class="nav-link1" data-doctype="Location">Location</a>
+    <a href="#" class="nav-link1" data-doctype="Department">Department</a>
+    <a href="#" class="nav-link1" data-doctype="shift">Shift</a>
+    <a href="#" class="nav-link1" data-doctype="Machine Type">Machine Type</a>
+    <a href="#" class="nav-link1" data-doctype="Spares List">Spares</a>
+    <a href="#" class="nav-link1" data-doctype="BOM List">BOM</a>
+    <a href="#" class="nav-link1" data-doctype="Machine List">Machine</a>
+    <a href="#" class="nav-link1" data-doctype="Check List">Check List</a>
+    <a href="#" class="nav-link1" data-doctype="UOM">UOM</a>
+    <a href="#" class="nav-link1" data-doctype="Escalation Matrixs">Escalation Matrixs</a>
+
+
+  </div>
+</div>
+  </div>
+
+      <a href="#" class="nav-link">MACHINE DASHBOARD</a>
+      <!-- Add more navbar links if needed -->
     </div>
-    <br>
-    <div class="row g-6 mb-6">
-        <div class="col-xl-3 col-sm-6 col-12">
-            <div class="card shadow border-0">
-                <div class="card-body c1">
-                    <div class="row">
-                        <div class="col">
-                            <span class="h6 font-semibold  text-sm d-block mb-2">New</span>
-                            <span class="count h3 font-bold mb-0">$750.90</span>
-                        </div>
-                        <div class="col-auto">
-                            <div class="bg-tertiary icon-shape rounded-circle text-lg ">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 col-12">
-            <div class="card shadow border-0">
-                <div class="card-body c2">
-                    <div class="row">
-                        <div class="col">
-                            <span class="h6 font-semibold  text-sm d-block mb-2">Assigned</span>
-                            <span class="h3 font-bold mb-0">215</span>
-                        </div>
-                        <div class="col-auto">
-                            <div class=" icon-shape  text-lg rounded-circle">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
+  </nav>
 
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 col-12">
-            <div class="card shadow border-0">
-                <div class="card-body c3">
-                    <div class="row">
-                        <div class="col">
-                            <span class="h6 font-semibold  text-sm d-block mb-2">In progress</span>
-                            <span class="h3 font-bold mb-0">1.400</span>
-                        </div>
-                        <div class="col-auto">
-                            <div class=" icon-shape  text-lg ">
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 col-12">
-            <div class="card shadow border-0">
-                <div class="card-body c4">
-                    <div class="row">
-                        <div class="col">
-                            <span class="h6 font-semibold  text-sm d-block mb-2">Reopen</span>
-                            <span class="h3 font-bold mb-0">95%</span>
-                        </div>
-                        <div class="col-auto">
-                            <div class="icon-shape text-lg">
-                                <i class="fa fa-refresh" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
+<div class="container1">
 
-                </div>
-            </div>
+    <div class="box new">
+        <div class="content">
+        <span class="icon"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+        <p class="new-1">New</p>
         </div>
+        <div id="count1">1</div>
     </div>
-    <div class="me">
-        <div class="row g-6 mb-6">
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card shadow border-0">
-                    <div class="card-body c5">
-                        <div class="row">
-                            <div class="col">
-                                <span class="h6 font-semibold  text-sm d-block mb-2">Completed</span>
-                                <span class="h3 font-bold mb-0">$750.90</span>
-                            </div>
-                            <div class="col-auto">
-                                <div class="bg-tertiary icon-shape rounded-circle text-lg ">
-                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12">
-                <div class="card shadow border-0">
-                    <div class="card-body c6">
-                        <div class="row">
-                            <div class="col">
-                                <span class="h6 font-semibold  text-sm d-block mb-2">Closed</span>
-                                <span class="h3 font-bold mb-0">215</span>
-                            </div>
-                            <div class="col-auto">
-                                <div class=" icon-shape  text-lg rounded-circle">
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+    <div class="box reopen">
+        <div class="content">
+        <span class="icon"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+        <span class="re-1">Reopen</span>
         </div>
+        <div id="count2">1</div>
+    </div>
+    <div class="box assigned">
+        <div class="content">
+        <span class="icon"><i class="fa fa-file" aria-hidden="true"></i></span>
+        <span class="as-1">Assigned</span>
+        
+        </div>
+        <div id="count3">1</div>
+    </div>
+    <div class="box closed">
+        <div class="content">
+        <span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <span class="cl-1">Closed</span>
+        </div>
+        <div id="count4">1</div>
+    </div>
+    <div class="box inprogress">
+        <div class="content">
+        <span class="icon"><i class="fa fa-spinner" aria-hidden="true"></i></span>
+        <span class="in-1">In Progress</span>
+        </div>
+        <div id="count5">1</div>
+    </div>
+    <div class="box completed">
+        <div class="content">
+        <span class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></i></span>
+        <span class="co-1">Completed</span>
+        </div>
+        <div id="count6">1</div>
     </div>
 
-    <div class="row chart">
-        <div class="col-6 line">
-            <div>
-                <canvas id="myChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6 pie d-flex align-items-center justify-content-center">
-            <div>
-                <canvas id="myCharts"></canvas>
-            </div>
-        </div>
+    <!-- Charts -->
+
+     <div class="linechart" style="position: relative; height:53vh; width: 25vw;">
+        <div class="charttitle">MACHINE MAINTENANCE LINE-CHART  <i class="fa fa-line-chart" aria-hidden="true"></i></div>
+    <canvas id="myChart"></canvas>
     </div>
 
-</body>
+    <div class="piechart" style="position: relative; height:53vh; width: 25vw;">
+            <div class="charttitle">MACHINE MAINTENANCE PIE-CHART  <i class="fa fa-pie-chart" aria-hidden="true"></i></div>
+    <canvas id="myChart2"></canvas>
+    </div>
+
+    <div class="barchart" style="position: relative; height:53vh; width: 25vw;">
+            <div class="charttitle">MACHINE MAINTENANCE BAR-CHART  <i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+    <canvas id="chart"></canvas>
+    </div>
+    
+
+<!-- Foor COmpany and Plant Information -->
+
+        <div id="doctype" style="position: relative; height:60vh; width:110vw">
+            <h1 class="com_info">Company Information</h1>
+             <div class="container2">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead id="companyList"></thead>
+                         <tr></tr>
+                    </table>
+                </div>
+            </div>
+
+         </div>
+         <div id="plant-doctype" style="position: relative; height:60vh; width:110vw">
+            <h1 class="com_info">Plant Information</h1>
+             <div class="container2">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead id="plantList"></thead>
+                         <tr></tr>
+                    </table>
+                </div>
+            </div>
+
+ 
+           </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

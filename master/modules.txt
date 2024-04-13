@@ -1,8 +1,5 @@
 nash
 Master
 master1
-<<<<<<< HEAD
 PREVENTIVE MAINTENANCE
-=======
 CORRECTIVE MAINTENANCE
->>>>>>> 2f86280331f626ba63faa9a80aeb3892318b2562

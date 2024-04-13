@@ -1,0 +1,385 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bree serif", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar1 {
+    background-color: #5b8f23;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+/*    border-radius: 30px;*/
+}
+
+.navbar1-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar1 a, .navbar1 span {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 18px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 212px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.box {
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    display: inline-block;
+    width: calc(30% - 10px);
+    text-align: center;
+    box-shadow: 0 5px 15px Black;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.box .icon {
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  background-position: left center;
+}
+#doctype, #plant-doctype {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    margin-top: 83px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+#doctype{
+/*    margin-top: 2px;*/
+}
+
+/* Icon colors */
+.fa-plus-square {color: white;}
+.fa-retweet {color: #f9a825;}
+.fa-file {color: #2196F3;}
+.fa-window-close {color: #f44336;}
+.fa-spinner {color: #FFC107;}
+.fa-star {color: #9C27B0;}
+
+/* Box Background Colors */
+.new { background-color: #5481cf; }
+.reopen { background-color: #231f13; }
+.assigned { background-color: #ce6ce17d; }
+.closed { background-color: #56cf59; }
+.inprogress { background-color: #ed5a44fc; }
+.completed { background-color: #bd6f39e3; }
+
+/* Icon Colors */
+.new .icon { color: white; }
+.reopen .icon { color: black; }
+.assigned .icon { color: white; }
+.closed .icon { color: black; }
+.inprogress .icon { color: white; }
+.completed .icon { color: white; }
+
+/*NEW Box*/
+.new{
+    background-color: #2069e9db;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+
+/*Reopen*/
+.reopen{
+    background-color: #dbb124eb;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+/*Assigned*/
+.assigned{
+    background-color: #a312bfa6;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+
+/*closed*/
+.closed{
+    background-color: #1cb120d4;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+
+/*inprogress*/
+.inprogress{
+    background-color: #ef2e11c9;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+/*completed*/
+.completed{
+    background-color: #00b2ffcc;
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 26px;
+}
+
+/*For Company Table*/ 
+
+.company-info
+{
+    border:2px solid black;
+    margin-top: 10px;
+}
+.com_info{
+    font-size: 30px;
+    padding: 17px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    background-color: #e34564d9;
+    margin: 5px 0;
+/*    border-radius: 16px;*/
+    box-shadow: 0 5px 8px rgba(0,0,0,.1);
+}
+.company-info th ,td{
+    margin: 10px;   
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/*For Plant Table*/ 
+.plant-info th ,td{
+    margin: 10px;   
+    padding: 10px;
+    border: 2px solid black;
+}
+.plant-info
+{
+    border:2px solid black;
+    margin-top: 10px;
+}
+
+
+/* Increase the size of the Font Awesome icon */
+.box .fa-plus-square {
+    font-size: 60px;
+    margin-left: 64px;
+    color: wheat;
+}
+.box .fa-retweet {
+    font-size: 60px;
+    margin-left: 63px;
+    color: wheat;
+}
+.box .fa-file {
+  font-size: 60px;
+    margin-left: 75px;
+    color: wheat;
+}
+.box .fa-window-close {
+    color: wheat;
+    font-size: 60px;
+    margin-left: 53px;
+}
+.box .fa-spinner {
+  font-size: 60px;
+    margin-left: 65px;
+    color: wheat;
+}
+.box .fa-star {
+  font-size: 60px;
+    margin-left: 70px;
+    color: wheat;
+}
+/* Additional styling to ensure consistency */
+.box .icon {
+  margin-right: 141px; /* Adjust space between the Unicode icon and text if both are used */
+}
+.box .content {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-top: 17px;
+}
+.new-1{
+    margin-left: 22px;
+}
+/**/
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusts the spacing between the boxes */
+/*    margin-top: -73px;*/
+}
+
+
+
+
+.flex, .flex-column {
+    display: none;
+}
+
+
+.container1 {
+    margin-left: 0px;
+    padding: 10px;
+    background-color: #6aaf00;
+}
+
+.head {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form .list label {
+    font-size: 14px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#navbar-breadcrumbs a{
+    color: white;
+}
+
+
+/* Basic styling for the entire form */
+/*form {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px #ddd;
+    background-color: #f9f9f9;
+}
+*/
+/* Styling labels for better appearance */
+/*label {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 16px;
+    color: #333;
+}*/
+
+/* Styling the select element */
+select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Hover and focus effects for select element */
+select:hover, select:focus {
+    border-color: #888;
+}
+
+/* Styling the button */
+input[type="button"] {
+    padding: 10px 10px;
+    background-color: #007BFF;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover and active effects for the button */
+input[type="button"]:hover {
+    background-color: rgb(98, 125, 40);
+}
+
+input[type="button"]:active {
+    background-color: #007BFF;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
