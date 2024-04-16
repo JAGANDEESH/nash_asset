@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../../../../tmp/tmp-112792-S1FkFZgMSdeq/master/master/public/scss/master.bundle.css"],
+  "sourcesContent": [".form-control {\n  background-color: rgb(255, 255, 255);\n  border: 1px solid;\n}\n\n.btn.btn-default {\n  background-color: #9bb369;\n  color: whitesmoke;\n}\n\n.btn.btn-default:hover {\n  transition: 2s;\n  background-color: rgb(255, 255, 255);\n}\n\n.btn.btn-primary {\n  background-color: #9bb369;\n  color: whitesmoke;\n}\n\n.navbar {\n  background-color: #9bb369;\n  color: whitesmoke;\n}\n\n.grid-row > .row .col, .form-section .grid-row > .section-body .col, .form-dashboard-section .grid-row > .section-body .col, .grid-row > .dialog-assignment-row .col {\n  padding: var(--grid-padding);\n  border-left: 1px solid #000;\n  border-bottom: 1px solid black;\n  border-top: 1px solid black;\n  border-right: 1px solid black;\n}\n\n.grid-row > .row .col:last-child, .form-section .grid-row > .section-body .col:last-child, .form-dashboard-section .grid-row > .section-body .col:last-child, .grid-row > .dialog-assignment-row .col:last-child {\n  border-left: 1px solid black;\n  padding: 8px;\n  min-width: 0;\n}"],
+  "mappings": ";AAAA;AACE;AACA;AAAA;AAGF;AACE;AACA;AAAA;AAGF;AACE;AACA;AAAA;AAGF;AACE;AACA;AAAA;AAGF;AACE;AACA;AAAA;AAGF;AAAA;AAAA;AAAA;AACE;AACA;AACA;AACA;AACA;AAAA;AAGF;AAAA;AAAA;AAAA;AACE;AACA;AACA;AAAA;",
+  "names": []
+}

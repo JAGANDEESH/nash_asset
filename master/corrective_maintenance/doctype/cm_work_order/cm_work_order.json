@@ -6,57 +6,35 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_roh3",
-  "amended_from",
   "cm_work_order_details_section",
   "wo_request_no",
   "wo_request_date",
-  "assigned_by",
-  "assigned_to",
   "breakdown_date",
   "machine_number",
   "priority",
   "shift_name",
+  "work_order_date",
+  "work_order_type",
   "column_break_vmkt",
+  "assigned_to",
+  "assigned_by",
   "report_by",
   "reported_date",
   "report_time",
   "problem_description",
   "required_completion",
-  "list_of_cm_work_order_section",
-  "root_cause",
-  "action_taken",
-  "column_break_rmqs",
-  "status",
-  "starting_date_time",
-  "closing_date_time",
-  "column_break_wrja",
-  "spare_uom",
-  "spare",
-  "spare_qty"
+  "list_section",
+  "list",
+  "spare_list",
+  "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "section_break_roh3",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Cm Work Order",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
   {
    "fieldname": "wo_request_no",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "WO Request No",
    "options": "Cm Work Order Request",
-   "read_only": 1,
    "reqd": 1,
    "unique": 1
   },
@@ -148,69 +126,50 @@
    "reqd": 1
   },
   {
-   "collapsible": 1,
-   "fieldname": "list_of_cm_work_order_section",
-   "fieldtype": "Section Break",
-   "label": "LIST OF CM WORK ORDER"
-  },
-  {
-   "fieldname": "root_cause",
-   "fieldtype": "Small Text",
-   "label": "Root Cause"
-  },
-  {
-   "fieldname": "action_taken",
-   "fieldtype": "Small Text",
-   "label": "Action Taken"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Inprogress\nClosed"
-  },
-  {
-   "fieldname": "starting_date_time",
-   "fieldtype": "Datetime",
-   "label": "Starting Date and Time"
-  },
-  {
-   "fieldname": "closing_date_time",
-   "fieldtype": "Datetime",
-   "label": "Closing Date and Time"
-  },
-  {
-   "fieldname": "spare",
-   "fieldtype": "Data",
-   "label": "Spare"
-  },
-  {
-   "fieldname": "spare_uom",
-   "fieldtype": "Data",
-   "label": "Spare UOM"
-  },
-  {
-   "fieldname": "spare_qty",
-   "fieldtype": "Int",
-   "label": "Spare Qty"
-  },
-  {
    "fieldname": "column_break_vmkt",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_wrja",
-   "fieldtype": "Column Break"
+   "fieldname": "work_order_date",
+   "fieldtype": "Date",
+   "label": "Work Order Date"
   },
   {
-   "fieldname": "column_break_rmqs",
-   "fieldtype": "Column Break"
+   "fieldname": "work_order_type",
+   "fieldtype": "Data",
+   "label": "Work Order Type"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cm Work Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "spare_list",
+   "fieldtype": "Table",
+   "label": "Spare List",
+   "options": "Cm Spare Child"
+  },
+  {
+   "fieldname": "list",
+   "fieldtype": "Table",
+   "options": "List of Cm work child"
+  },
+  {
+   "fieldname": "list_section",
+   "fieldtype": "Section Break",
+   "label": "LIST"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-26 11:55:06.694859",
+ "modified": "2024-04-16 17:02:47.269699",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Work Order",

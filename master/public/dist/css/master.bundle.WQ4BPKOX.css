@@ -1,0 +1,40 @@
+/* ../../../../../../tmp/tmp-112792-VONi16IKxxdq/master/master/public/scss/master.bundle.css */
+.form-control {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid;
+}
+.btn.btn-default {
+  background-color: #9bb369;
+  color: whitesmoke;
+}
+.btn.btn-default:hover {
+  transition: 2s;
+  background-color: rgb(255, 255, 255);
+}
+.btn.btn-primary {
+  background-color: #9bb369;
+  color: whitesmoke;
+}
+.navbar {
+  background-color: #9bb369;
+  color: whitesmoke;
+}
+.grid-row > .row .col,
+.form-section .grid-row > .section-body .col,
+.form-dashboard-section .grid-row > .section-body .col,
+.grid-row > .dialog-assignment-row .col {
+  padding: var(--grid-padding);
+  border-right: 1px solid #000;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.grid-row > .row .col:last-child,
+.form-section .grid-row > .section-body .col:last-child,
+.form-dashboard-section .grid-row > .section-body .col:last-child,
+.grid-row > .dialog-assignment-row .col:last-child {
+  border-right: 1px solid black;
+  padding: 8px;
+  min-width: 0;
+}
+/*# sourceMappingURL=master.bundle.WQ4BPKOX.css.map */
