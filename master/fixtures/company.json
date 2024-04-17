@@ -124,5 +124,26 @@
   "doctype": "Company",
   "modified": "2024-04-15 18:25:24.195706",
   "name": "Amudha"
+ },
+ {
+  "amended_from": null,
+  "company_address": "13/3 north street, sankaran koil",
+  "company_city": "Srivilliputhur",
+  "company_code": "04",
+  "company_country": "India",
+  "company_email": "vignesh112@gmail.com",
+  "company_gstinno": null,
+  "company_logo": null,
+  "company_mobile": "+91-6382274181",
+  "company_name": "vignesh",
+  "company_phone": "+91-06382274181",
+  "company_pincode": "626 135",
+  "company_state": "Tamil Nadu",
+  "company_status": "Active",
+  "company_website": null,
+  "docstatus": 1,
+  "doctype": "Company",
+  "modified": "2024-04-17 11:30:19.635617",
+  "name": "vignesh"
  }
 ]
