@@ -25,6 +25,12 @@
   "required_completion",
   "list_section",
   "list",
+  "list_of_cm_work_order_section",
+  "root_cause",
+  "action_taken",
+  "status",
+  "starting_date_and_time",
+  "closing_date_and_time",
   "spare_list",
   "amended_from"
  ],
@@ -126,8 +132,40 @@
    "reqd": 1
   },
   {
+   "collapsible": 1,
+   "fieldname": "list_of_cm_work_order_section",
+   "fieldtype": "Section Break",
+   "label": "LIST OF CM WORK ORDER"
+  },
+  {
    "fieldname": "column_break_vmkt",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "root_cause",
+   "fieldtype": "Small Text",
+   "label": "Root Cause"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Small Text",
+   "label": "Action Taken"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Inprogress\nClosed"
+  },
+  {
+   "fieldname": "starting_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Starting Date and Time"
+  },
+  {
+   "fieldname": "closing_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Closing Date and Time"
   },
   {
    "fieldname": "work_order_date",
