@@ -17,7 +17,7 @@
   "company_email",
   "company_phone",
   "company_mobile",
-  "pincode",
+  "company_pincode",
   "company_website",
   "column_break_0jxi",
   "company_gstinno",
@@ -87,20 +87,17 @@
   {
    "fieldname": "company_website",
    "fieldtype": "Data",
-   "label": "Company Website",
-   "reqd": 1
+   "label": "Company Website"
   },
   {
    "fieldname": "company_gstinno",
    "fieldtype": "Data",
-   "label": "Company GstinNo",
-   "reqd": 1
+   "label": "Company GstinNo"
   },
   {
    "fieldname": "company_logo",
    "fieldtype": "Attach",
-   "label": "Company Logo",
-   "reqd": 1
+   "label": "Company Logo"
   },
   {
    "fieldname": "company_status",
@@ -120,12 +117,6 @@
    "search_index": 1
   },
   {
-   "fieldname": "pincode",
-   "fieldtype": "Data",
-   "label": "Pincode",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_vdwo",
    "fieldtype": "Column Break"
   },
@@ -136,12 +127,18 @@
   {
    "fieldname": "column_break_0jxi",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-19 13:51:55.751322",
+ "modified": "2024-04-17 11:00:22.138028",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Company",

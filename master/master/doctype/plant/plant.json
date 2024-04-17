@@ -1,14 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "field:code",
  "creation": "2024-03-14 14:00:01.253178",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_hxcg",
-  "code",
   "name1",
+  "code",
   "plant_address",
   "country",
   "state",
@@ -138,7 +138,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 13:51:14.273088",
+ "modified": "2024-04-16 16:18:58.068629",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plant",
@@ -162,5 +162,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "name1"
+ "title_field": "code",
+ "translated_doctype": 1
 }

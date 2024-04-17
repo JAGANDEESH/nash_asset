@@ -170,8 +170,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Active\nInactive",
-   "reqd": 1
+   "options": "Active\nInactive"
   },
   {
    "fetch_from": "code.name1",
@@ -184,14 +183,13 @@
    "fieldname": "code",
    "fieldtype": "Link",
    "label": "Plant Code",
-   "options": "Plant",
-   "reqd": 1
+   "options": "Plant"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-16 18:07:38.138008",
+ "modified": "2024-04-17 10:56:05.850597",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",

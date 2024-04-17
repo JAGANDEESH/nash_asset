@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-03-26 12:09:14.729883",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-03-30 13:28:34.233101",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "machine-dashboard",
+ "owner": "Administrator",
+ "page_name": "machine-dashboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": ""
+}
