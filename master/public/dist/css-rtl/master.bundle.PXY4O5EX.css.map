@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../../../../../tmp/tmp-5463-VMjJY88YMTcO/master/master/public/scss/master.bundle.css"],
-  "sourcesContent": [".form-control {\n  background-color: lightgrey;\n  border: 1px solid;\n}\n\n.btn.btn-default {\n  background-color: #627D28;\n}\n\n.btn.btn-default:hover {\n  transition: 2s;\n  background-color: grey;\n}\n\n.btn.btn-primary {\n  background-color: #627D28;\n}\n\n.navbar {\n  background-color: #627D28;\n}"],
-  "mappings": ";AAAA;AACE;AACA;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AACA;AAAA;AAGF;AACE;AAAA;AAGF;AACE;AAAA;",
-  "names": []
-}
