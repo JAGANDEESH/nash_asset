@@ -27,8 +27,10 @@
   "total_shot",
   "remaining_shots",
   "location",
-  "plant",
-  "amended_from"
+  "code",
+  "name1",
+  "amended_from",
+  "status"
  ],
  "fields": [
   {
@@ -52,27 +54,24 @@
    "fieldname": "machine_description",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Machine Description",
-   "reqd": 1
+   "label": "Machine Description"
   },
   {
    "fieldname": "type",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Type",
+   "label": "Machine Type",
    "options": "Machine Type"
   },
   {
    "fieldname": "makemodelcapacity",
    "fieldtype": "Data",
-   "label": "Make/Model/Capacity",
-   "reqd": 1
+   "label": "Make/Model/Capacity"
   },
   {
    "fieldname": "specification",
    "fieldtype": "Data",
-   "label": "Specification",
-   "reqd": 1
+   "label": "Specification"
   },
   {
    "fieldname": "commission_date",
@@ -102,13 +101,13 @@
    "fieldname": "critical_spares_bom",
    "fieldtype": "Link",
    "label": "Critical Spares BOM",
-   "options": "BOM List"
+   "options": "BOM List",
+   "reqd": 1
   },
   {
    "fieldname": "power_consumption",
    "fieldtype": "Data",
-   "label": "Power Consumption",
-   "reqd": 1
+   "label": "Power Consumption"
   },
   {
    "fieldname": "required_air",
@@ -144,14 +143,7 @@
    "fieldname": "location",
    "fieldtype": "Select",
    "label": "Location",
-   "options": "WIP - Welding\nWIP - Powder Coating\nWIP - Press Shop HSC\nWIP - Press Shop SSC",
-   "reqd": 1
-  },
-  {
-   "fieldname": "plant",
-   "fieldtype": "Link",
-   "label": "Plant",
-   "options": "Plant",
+   "options": "WIP-Welding\nWIP-PowderCoasting\nWIP-press Shop HSC\nWIP-press Shop SSC",
    "reqd": 1
   },
   {
@@ -173,12 +165,33 @@
    "label": "Machine Number",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "code.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Plant Name",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Link",
+   "label": "Plant Code",
+   "options": "Plant",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 13:24:10.579064",
+ "modified": "2024-04-16 18:07:38.138008",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",
@@ -195,13 +208,14 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
  "quick_entry": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "machine_number",
  "track_changes": 1
 }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
+    <title>Machine</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 19px;
+        }
+        .form{
+            background-color: rgb(205, 248, 125);
+            border-radius: 5px;
+            padding: 10px;  
+        }
+       
+        .input,textarea{
+            display: block;
+            width: 100%;
+            padding: 8px;
+            border: none;
+            outline: none;
+            font-size: 15px ;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            margin-top: 8px;
+            float: right;
+            padding: 8px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px; 
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+        .head{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form class="head" id="machineform">
+        <div class="form">
+            <div class="list">
+                <label>Machine Number</label>
+                <input type="text" class="input" id="machine_number" required onkeypress="validateInput(event)">
+                <label>Machine Name</label>
+                <input type="text" class="input" id="machine_name" required>
+                <label>Machine Description</label>
+                <textarea id="machine_description"></textarea>
+                <label>Machine Type</label>
+                <input type="text" class="input" id="type" required>
+                <label>Make/Model/Capacity</label>
+                <input type="text" class="input" id="makemodelcapacity" required>
+                <label>Specification</label>
+                <input type="text" class="input" id="specification" required>
+                <label>Commission Date</label>
+                <input type="date" class="input" id="commission_date" required>
+                <label>Supplier / Service Address</label>
+                <textarea id="supplier__service_address"></textarea>
+                <label>Service Contact Person</label>
+                <input type="text" class="input" id="service_contact_person" required>
+                <label>Service Contact Number</label>
+                <input type="text" class="input" id="service_contact_numbe" required onkeypress="validateInput(event)">
+                <label>Critical Spares BOM</label>
+                <input type="text" class="input" id="critical_spares_bom" required onkeypress="validateInput(event)">
+                <label>Power Consumption</label>
+                <input type="text" class="input" id="power_consumption" required>
+                <label>Required Air</label>
+                <input type="text" class="input" id="required_air" required>
+                <label>Required gas</label>
+                <input type="text" class="input" id="required_gas" required>
+                <label>Required Oil/Grade</label>
+                <input type="text" class="input" id="required_oilgrade" required>
+                <label>Total Shot</label>
+                <input type="text" class="input" id="total_shot" required onkeypress="validateInput(event)">
+                <label>Remaining Shots</label>
+                <input type="text" class="input" id="remaining_shots" required onkeypress="validateInput(event)">
+                <label>Location</label>
+                <select class="input" id="location" style="background-color: white;">
+                    <option>WIP-Welding</option>
+                    <option>WIP-Powder Coasting</option>
+                    <option>WIP-Press Shop Hsp</option>
+                </select>
+                <label>Plant</label>
+                <input type="text" class="input" id="plant" required>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead id="Machine_list"></thead>
+                 <tr></tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>       
+    <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script>
+</body>
+</html>

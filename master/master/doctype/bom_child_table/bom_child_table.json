@@ -14,10 +14,12 @@
  "fields": [
   {
    "fieldname": "item_code",
-   "fieldtype": "Int",
-   "label": "Item Code"
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Spares List"
   },
   {
+   "fetch_from": "item_code.item_description",
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
@@ -28,6 +30,7 @@
    "label": "Qty Used"
   },
   {
+   "fetch_from": "item_code.uom",
    "fieldname": "uom",
    "fieldtype": "Select",
    "label": "UOM",
@@ -37,7 +40,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-15 10:43:55.033084",
+ "modified": "2024-04-15 10:53:27.351619",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "BOM child table",

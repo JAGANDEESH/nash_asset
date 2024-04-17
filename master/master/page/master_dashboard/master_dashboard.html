@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .widget-content .widget-content-left .widget-heading 
+        {
+                font-size: 25px;
+          }
+        .widget-subheading
+          {
+            font-size: 19px;
+            color: white;
+        }
+        .chart{
+                 margin-top: 20px;  
+        }
+        .line{
+            background-color:white;
+            padding: 10px;
+        }
+        .pie{
+            background-color:whitesmoke;
+            padding:30px;
+        }
+        #myCharts{
+            height:300px !important;
+            width:300px !important;
+        }
+        .table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        h4{
+            margin-top: 10px;
+            font-weight: 800;
+        }
+        /* Sidebar Styles */
+        .card:hover {
+            transform: scale(1.1); 
+        }
+        img{
+            margin-bottom: 5px;
+        }
+        .fa-bars:before {
+            margin-left: 34px;
+            cursor: pointer;
+        }
+        .sub-head{
+            color: #007bff;
+            font-size: 18px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color:lightgoldenrodyellow;
+            padding: 20px;
+            min-height: 700px;
+            max-width: 420px;
+        }
+        .sidebar.collapsed{
+            width: 60px;
+        }
+        .sidebar .nav-link {
+            display: flex;
+            align-items: center;
+            color: #343a40;
+            text-decoration: none;
+        }
+
+        .sidebar .nav-link.active {
+            font-weight: bold;
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 10px;
+        }
+
+        .sidebar .nav-item {
+            margin-bottom: 10px;
+        }
+        .img,.fa .fa-bars{
+            box-shadow: 0 0 5px white;
+        }
+        #sidebar-toggle {
+             cursor: pointer;
+        }
+        .content .page-container{
+            width: 100%;
+        }
+        h4{
+            margin-bottom: 18px
+        }
+        .sidebar{
+            margin-left: -16%;
+        }
+        .page-title .title-area .title-text {
+            margin-left: -100%;
+        }
+        #content{
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="row" id="row" >
+    <div class="sidebar col-3">
+        <h4>MASTER DASHBOARD </h4>
+        <ul class="nav flex-column" >
+            <li class="nav-item">
+                <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Dashboard </span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+            </li>
+            <div class="collapse" id="dashboardCollapse">
+                <li class="nav-item dropdown-item" class="nav-item">
+                <a class="nav-link active" >
+                    <i class="fa fa-line-chart"></i>
+                    <span>Machine Dashboard</span>
+                </a>
+                </li>
+
+        </ul>
+        <ul class="nav flex-column" >
+            <li class="nav-item">
+                <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse1" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Machine</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse1" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+            </li>
+        <div class="collapse" id="dashboardCollapse1">
+                    <li class="nav-item dropdown-item" class="nav-item">
+                        <a class="nav-link" class="nav-link Company" href="#">
+                            <i class="fa fa-building"></i>
+                            <span class="Company">Company</span>
+                        </a>
+                    </li>
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Plant" href="#">
+                        <i class="fa fa-industry"></i>
+                        <span class="Plant">Plant</span>
+                    </a>
+                </li>
+            <ul class="nav flex-column">
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Location" href="#">
+                        <i class="fa fa-thumb-tack"></i>
+                        <span class="Location">Location</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Department" href="#">
+                        <i class="fas fa-users"></i>
+                        <span class="Department">Department</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Shift" href="#">
+                        <i class="fa fa-random"></i>
+                        <span class="Shift">Shift</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Type" href="#">
+                        <i class="fas fa-cogs"></i>
+                        <span class="Type">Machine Type</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Spares" href="#">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                        <span class="Spares">Spares</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link BOM" href="#">
+                        <i class="fa fa-line-chart" ></i>
+                        <span class="BOM">BOM</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Machine" href="#">
+                        <i class="fas fa-cog"></i>
+                        <span class="Machine">Machine</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Check" href="#">
+                        <i class="fa fa-list-alt" ></i>
+                        <span class="Check">Check List</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Check" href="#">
+                        <i class="fa fa-area-chart"></i>
+                        <span class="UOM">UOM</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav flex-column" >
+                <li class="nav-item dropdown-item" class="nav-item">
+                    <a class="nav-link" class="nav-link Check" href="#">
+                        <i class="fa fa-check-square"></i>
+                        <span class="Escalation ">Escalation Matrixs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <ul class="nav flex-column" >
+                <li class="nav-item">
+                    <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse2" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Corrective Maintainance</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse2" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+                </li>
+            </ul>
+            <div class="collapse" id="dashboardCollapse2">
+                        <li class="nav-item dropdown-item" class="nav-item">
+                            <a class="nav-link" class="nav-link Company" href="#">
+                                <i class="fa fa-file"></i>
+                                <span class="CM request">CM Work Order Request</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown-item" class="nav-item">
+                            <a class="nav-link" class="nav-link Company" href="#">
+                                <i class="fa fa-bell"></i>
+                                <span class="CM order">CM Work Order</span>
+                            </a>
+                        </li>
+                    </div>
+                        <ul class="nav flex-column" >
+                            <li class="nav-item">
+                                <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse3" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Corrective Maintainance</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse3" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+                            </li>
+                        </ul>
+                        <div class="collapse" id="dashboardCollapse3">
+                                    <li class="nav-item dropdown-item" class="nav-item">
+                                        <a class="nav-link" class="nav-link Company" href="#">
+                                            <i class="fa fa-clock"></i>
+                                            <span class="PM Schedule">PM Schedule</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown-item" class="nav-item">
+                                        <a class="nav-link" class="nav-link Company" href="#">
+                                            <i class="fa fa-bell"></i>
+                                            <span class="PM Notification">PM Notification</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown-item" class="nav-item">
+                                        <a class="nav-link" class="nav-link Company" href="#">
+                                            <i class="fa fa-file"></i>
+                                            <span class="PM order">PM Work Order</span>
+                                        </a>
+                                    </li>
+                            </div>
+
+                            <ul class="nav flex-column" >
+                                <li class="nav-item">
+                                    <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse4" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Report</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse4" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+                                </li>
+                            </ul>
+                            <div class="collapse" id="dashboardCollapse4">
+                                        <li class="nav-item dropdown-item" class="nav-item">
+                                            <a class="nav-link" class="nav-link Company" href="#">
+                                                <i class="fa fa-file"></i>
+                                                <span class="Tool MR">Tool Maintainance Report</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown-item" class="nav-item">
+                                            <a class="nav-link" class="nav-link Company" href="#">
+                                                <i class="fa fa-file"></i>
+                                                <span class="Machine MR">Machine Maintainance Report</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown-item" class="nav-item">
+                                            <a class="nav-link" class="nav-link Company" href="#">
+                                                <i class="fa fa-file"></i>
+                                                <span class="Corrective MR">Corrective Maintainance Report</span>
+                                            </a>
+                                        </li>
+                                </div>
+
+                                <ul class="nav flex-column" >
+                                    <li class="nav-item">
+                                        <span class="sub-head" data-bs-toggle="collapse" href="#dashboardCollapse5" role="button" aria-expanded="false" aria-controls="dashboardCollapse">Setting</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse5" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+                                    </li>
+                                </ul>
+                                     <div class="collapse" id="dashboardCollapse5">
+                                            <li class="nav-item dropdown-item" class="nav-item">
+                                                <a class="nav-link" class="nav-link Company" href="#">
+                                                    <i class="fas fa-user-lock metismenu-icon"></i>
+                                                    <span class="Tool MR">Change Password</span>
+                                                </a>
+                                            </li>
+                                            <ul class="nav flex-column" >
+                                                <li class="nav-item">
+                                                    <span  data-bs-toggle="collapse" href="#dashboardCollapse6" role="button" aria-expanded="false" aria-controls="dashboardCollapse">User Management</span> <i class="fa fa-caret-down" data-bs-toggle="collapse" href="#dashboardCollapse6" role="button" aria-expanded="false" aria-controls="dashboardCollapse"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="collapse" id="dashboardCollapse6">
+                                                <li class="nav-item dropdown-item" class="nav-item">
+                                                    <a class="nav-link" class="nav-link Company" href="#">
+                                                        <i class="fas fa-user-lock metismenu-icon"></i>
+                                                        <span class="role">Role</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown-item" class="nav-item">
+                                                    <a class="nav-link" class="nav-link Company" href="#">
+                                                        <i class="fas fa-user-lock metismenu-icon"></i>
+                                                        <span class="sms">SMS Config</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown-item" class="nav-item">
+                                                    <a class="nav-link" class="nav-link Company" href="#">
+                                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                                        <span class="User Creation">User Creation</span>
+                                                    </a>
+                                                </li>
+                                            </div>
+                    
+
+                                        </div>   
+        </ul>
+    </div>
+    <section class="wrapper col-9">
+        <div id="content">
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-arielle-smile">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading" >New</div>
+                            <div class="widget-subheading" id="one">10</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-plus-circle" aria-hidden="true" ></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-primary">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading">Assigned</div>
+                            <div class="widget-subheading" id="two">6</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-warning">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading">Improgress  </div>
+                            <div class="widget-subheading" id="three">4</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-spinner" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-grow-early">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading">Completed</div>
+                            <div class="widget-subheading" id="four">3</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-folder" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-secondary">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading">Reopen</div>
+                            <div class="widget-subheading" id="five">2</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-repeat" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-3 widget-content bg-danger">
+                    <div class="widget-content-wrapper text-white">
+                        <div class="widget-content-left">
+                            <div class="widget-heading">Close</div>
+                            <div class="widget-subheading" id="six">3</div>
+                        </div>
+                        <div class="widget-content-right">
+                            <div class="widget-numbers text-white"><span><i class="fa fa-close" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row chart">
+                <div class="col-6 line">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-6 pie d-flex align-items-center justify-content-center">
+                    <div>
+                        <canvas id="myCharts"></canvas>
+                    </div>
+                </div>
+            </div>
+            <h4>Machine List:</h4>
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead id="List"></thead>
+                         <tr></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.sidebar("collapsed")
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>       
+     <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script>
+</body>
+</html>

@@ -14,23 +14,27 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "bom_id",
    "fieldtype": "Int",
    "label": "BOM ID",
    "unique": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "mc_types",
    "fieldtype": "Link",
    "label": "M/C Types",
    "options": "Machine Type"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -41,6 +45,7 @@
    "search_index": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "bom_table",
    "fieldtype": "Table",
    "label": "BOM Table",
@@ -50,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 13:23:20.444593",
+ "modified": "2024-04-15 11:03:01.219824",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "BOM List",
@@ -70,7 +75,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
