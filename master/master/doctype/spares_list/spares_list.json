@@ -81,7 +81,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-16 11:07:16.570071",
+ "modified": "2024-03-25 16:39:05.798978",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Spares List",
@@ -102,8 +102,10 @@
   }
  ],
  "quick_entry": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "item_code",
  "track_changes": 1
 }

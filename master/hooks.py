@@ -10,7 +10,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/master/css/master.css"
+app_include_css = "master.bundle.css"
 # app_include_js = "/assets/master/js/master.js"
 
 # include js, css files in header of web template
@@ -227,9 +227,9 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 fixtures = [
-    # "Company",
-    # "Plant",
-    # "Location",
+    "Company",
+    "Plant",
+    "Location",
     # "Department",
     # "shift",
     # "Machine Type",
@@ -239,9 +239,9 @@ fixtures = [
     # "Spares List",
     # "BOM List",
     # "Machine List",
-    "PM NOTIFICATION LIST",
-    "PM WORK ORDER",
-    "PM SCHEDULE",
-    
+    # "PM NOTIFICATION LIST",
+    # "PM WORK ORDER",
+    # "PM SCHEDULE"
+
 ]
 

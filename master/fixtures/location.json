@@ -2,15 +2,43 @@
  {
   "amended_from": null,
   "code": "5100A",
+  "created_by": "vishnu",
+  "created_date": "2024-03-22 18:27:58",
+  "docstatus": 0,
+  "doctype": "Location",
+  "location": "nas",
+  "location_code": "1111",
+  "modified": "2024-03-22 18:28:09.718900",
+  "name": "1111",
+  "name1": "5100A",
+  "status": "Active"
+ },
+ {
+  "amended_from": null,
+  "code": "plant",
+  "created_by": "me",
+  "created_date": "2024-03-28 18:11:31",
+  "docstatus": 1,
+  "doctype": "Location",
+  "location": "srivi",
+  "location_code": "11111",
+  "modified": "2024-03-28 18:11:38.272247",
+  "name": "11111",
+  "name1": "plant",
+  "status": "Active"
+ },
+ {
+  "amended_from": null,
+  "code": "5100A",
   "created_by": "Administrator",
-  "created_date": "2024-03-19",
+  "created_date": "2024-03-19 00:00:00",
   "docstatus": 1,
   "doctype": "Location",
   "location": "WIP - Press Shop SSC",
   "location_code": "1005 - SSC",
   "modified": "2024-03-19 17:32:49.949322",
   "name": "1005 - SSC",
-  "plant_name": "CHN Plant A",
+  "name1": "5100A",
   "status": "Active"
  }
 ]

@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2024-03-25 18:40:55.259775",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-03-25 19:40:59.943449",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "master-dashboard",
+ "owner": "Administrator",
+ "page_name": "master-dashboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Master Dashboard"
+}

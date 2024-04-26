@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-03 14:43:53.855097",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xyda",
+  "spare",
+  "root_cause",
+  "spare_uom",
+  "spare_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xyda",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "spare",
+   "fieldtype": "Link",
+   "label": "Spare",
+   "options": "Spares List"
+  },
+  {
+   "fieldname": "spare_uom",
+   "fieldtype": "Int",
+   "label": "Spare UOM"
+  },
+  {
+   "fieldname": "spare_qty",
+   "fieldtype": "Int",
+   "label": "Spare Qty"
+  },
+  {
+   "fieldname": "root_cause",
+   "fieldtype": "Small Text",
+   "label": "Root cause",
+   "options": "List of Cm work child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-16 18:00:40.406285",
+ "modified_by": "Administrator",
+ "module": "CORRECTIVE MAINTENANCE",
+ "name": "Cm Spare Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
