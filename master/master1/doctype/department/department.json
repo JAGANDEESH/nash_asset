@@ -84,21 +84,19 @@
    "fieldname": "deparment_name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Department Name",
-   "reqd": 1
+   "label": "Department Name"
   },
   {
    "fieldname": "department_code",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Department code",
-   "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 16:36:04.311823",
+ "modified": "2024-04-26 10:36:44.690577",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Department",

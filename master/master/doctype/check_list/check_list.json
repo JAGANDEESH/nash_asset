@@ -53,14 +53,13 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Machine Type",
-   "options": "Machine Type",
-   "reqd": 1
+   "options": "Machine Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-11 17:18:45.258201",
+ "modified": "2024-04-26 10:34:14.227297",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Check List",
