@@ -1,0 +1,89 @@
+<div class="container mt-5">
+    <form class="form">
+        <h4><strong>Matrix Entry</strong> </h4>
+        <div class="form-group">
+            <label for="stage">Stage</label>
+            <select class="form-control" id="stage">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="durationOne">Duration One</label>
+                <select class="form-control" id="durationOne">
+                    <option>Days</option>
+                    <option>Hours</option>
+                    <option>Minutes</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <br>
+                <input type="text" class="form-control mt-2" id="enterDurationOne" placeholder="Enter Duration">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="roleOne">Role One</label>
+            <select class="form-control" id="roleOne">
+                <option>Super Admin</option>
+                <option>Operator</option>
+                <option>Requestor</option>
+                <option>Admin</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="durationTwo">Duration Two</label>
+                <select class="form-control" id="durationTwo">
+                    <option>Days</option>
+                    <option>Hours</option>
+                    <option>Minutes</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <br>
+                <input type="text" class="form-control mt-2" id="enterDurationTwo" placeholder="Enter Duration">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="roleTwo">Role Two</label>
+            <select class="form-control" id="roleTwo">
+                <option>Super Admin</option>
+                <option>Operator</option>
+                <option>Requestor</option>
+                <option>Admin</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select class="form-control" id="status">
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+        </div>
+
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <h4><strong>Escalation Matrixs</strong> </h4>
+    <table class="table table-hover table-border-outside display">
+        <thead>
+            <td>Stage</td>
+            <td>Duration One</td>
+            <td>Enter the duration</td>
+            <td>Role One</td>
+            <td>Duration Two</td>
+            <td>Enter the duration</td>
+            <td>Role Two</td>
+            <td>Status</td>
+        </thead>
+        <tbody id="data_table">
+        </tbody>
+    </table>
+</div>

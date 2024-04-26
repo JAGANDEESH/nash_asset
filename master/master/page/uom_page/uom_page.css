@@ -1,0 +1,57 @@
+h4{
+    background-color: rgb(250, 208, 158);
+    padding: 20px;
+    margin-bottom: 0 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.form{
+    background-color: rgb(253, 228, 196);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 0;
+    margin-top: 0;
+}   
+.page-head{
+    display: none;
+}
+
+thead{
+    background-color: rgb(249, 200, 109);
+}
+
+.navbar{
+    background-color: white !important;
+}
+.add-btn{
+    color: rgb(247, 245, 242);
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(28, 91, 204);
+}
+
+.table-form {
+    width: 100%;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table{
+    background-color: rgb(253, 228, 196);
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table td{
+    border: none !important;
+    padding: 10px;
+}

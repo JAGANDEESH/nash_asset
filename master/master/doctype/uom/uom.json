@@ -44,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-16 11:13:04.676190",
+ "modified": "2024-04-16 16:38:31.991496",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "UOM",
@@ -66,5 +66,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "uom_name"
 }

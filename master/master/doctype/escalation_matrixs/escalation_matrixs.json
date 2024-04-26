@@ -70,14 +70,14 @@
    "fieldname": "int_eijl",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Enter the duration",
+   "label": "Enter the first duration",
    "non_negative": 1,
    "reqd": 1
   },
   {
    "fieldname": "int_tjwl",
    "fieldtype": "Int",
-   "label": "Enter the duration",
+   "label": "Enter the second duration",
    "non_negative": 1,
    "reqd": 1
   },
@@ -112,7 +112,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-16 11:12:48.429034",
+ "modified": "2024-04-16 16:51:36.245189",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Escalation Matrixs",
@@ -133,6 +133,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "states": []
 }
