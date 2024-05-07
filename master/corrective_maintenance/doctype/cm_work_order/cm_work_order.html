@@ -1,0 +1,151 @@
+<style>
+    /* Style for form container */
+    .form-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for form labels */
+    .form-container label {
+        display: inline-block;
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    /* Style for form inputs */
+    .form-container input[type="text"],
+    .form-container input[type="datetime-local"] {
+        width: calc(100% - 190px);
+        /* Adjust based on label width */
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Style for table */
+    #sparesTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    #sparesTable th,
+    #sparesTable td {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    /* Style for buttons */
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #addRow {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .addParent {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .delete-child {
+        background-color: #f44336;
+        color: white;
+    }
+
+    .delete-parent {
+        background-color: #f44336;
+        color: white;
+    }
+
+    /* Style for parent buttons */
+    .parent-buttons {
+        margin-top: 20px;
+    }
+
+    /* Clearfix for floats */
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    td {
+        text-align: center;
+        justify-content: center;
+    }
+
+    input {
+        width: 200px !important;
+    }
+</style>
+<div class="form-container">
+    <form id="my-form">
+        <div>
+            <label for="root-cause">Root Cause:</label>
+            <input type="text" id="root-cause" name="root-cause">
+        </div>
+        <div>
+            <label for="action-taken">Action Taken:</label>
+            <input type="text" id="action-taken" name="action-taken">
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status">
+        </div>
+        <div>
+            <label for="start-datetime">Starting Date &amp; Time:</label>
+            <input type="datetime-local" id="start-datetime" name="start-datetime">
+        </div>
+        <div>
+            <label for="end-datetime">Closing Date &amp; Time:</label>
+            <input type="datetime-local" id="end-datetime" name="end-datetime">
+        </div>
+        <div>
+            <label for="action">Action:</label>
+            <input type="text" id="action" name="action">
+        </div>
+
+        <hr>
+
+        <table id="sparesTable">
+            <thead>
+                <tr>
+                    <th>Spare</th>
+                    <th>Spare UOM</th>
+                    <th>Spare Qty</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input id="ct1" type="text" name="spare"></td>
+                    <td><input id="ct2" type="text" name="spare-uom"></td>
+                    <td><input id="ct3" type="text" name="spare-qty"></td>
+                    <td><button type="button" id="addRow">Add Row</button>
+                        <button type="button" class="delete-child">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div class="parent-buttons">
+        <button type="button" id="addParent" class="addParent">Add Parent</button>
+        <button type="button" class="delete-parent">Delete Parent</button>
+    </div>
+    <br>
+    <div class="form-group buttons">
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </div>
+</div>
