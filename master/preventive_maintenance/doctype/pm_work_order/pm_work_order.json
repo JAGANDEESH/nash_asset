@@ -1,15 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
  "creation": "2024-03-25 13:39:21.061291",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "section_break_tyyj",
+  "naming_series",
   "work_order_number",
   "work_order_date",
   "assigned_by",
-  "work_order_status"
+  "work_order_status",
+  "section_break_j3ph",
+  "check_point",
+  "check_for",
+  "standard_spec__value",
+  "action_to_be_taken",
+  "remarks",
+  "if_click_list_was_closed",
+  "amended_from"
  ],
  "fields": [
   {
@@ -19,7 +29,8 @@
   {
    "fieldname": "work_order_number",
    "fieldtype": "Data",
-   "label": "Work Order Number"
+   "label": "Work Order Number",
+   "unique": 1
   },
   {
    "fieldname": "work_order_date",
@@ -35,14 +46,69 @@
    "fieldname": "work_order_status",
    "fieldtype": "Data",
    "label": "Work Order Status"
+  },
+  {
+   "fieldname": "section_break_j3ph",
+   "fieldtype": "Section Break",
+   "label": "Check List"
+  },
+  {
+   "fieldname": "check_point",
+   "fieldtype": "Data",
+   "label": "Check Point"
+  },
+  {
+   "fieldname": "check_for",
+   "fieldtype": "Data",
+   "label": "Check For"
+  },
+  {
+   "fieldname": "standard_spec__value",
+   "fieldtype": "Data",
+   "label": "Standard Spec / Value"
+  },
+  {
+   "fieldname": "action_to_be_taken",
+   "fieldtype": "Data",
+   "label": "Action to be Taken"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "default": "0",
+   "fieldname": "if_click_list_was_closed",
+   "fieldtype": "Check",
+   "label": "If click list was closed"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PM WORK ORDER",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "series",
+   "options": "PMW.-.######"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 14:06:10.095386",
+ "modified": "2024-05-06 12:20:55.133419",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM WORK ORDER",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -55,6 +121,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

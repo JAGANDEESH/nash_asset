@@ -230,18 +230,18 @@ fixtures = [
     "Company",
     "Plant",
     "Location",
-    # "Department",
-    # "shift",
-    # "Machine Type",
-    # "Check List",
-    # "UOM",
-    # "Escalation Matrixs", 
-    # "Spares List",
-    # "BOM List",
-    # "Machine List",
-    # "PM NOTIFICATION LIST",
-    # "PM WORK ORDER",
-    # "PM SCHEDULE"
+    "Department",
+    "shift",
+    "Machine Type",
+    "Check List",
+    "UOM",
+    "Escalation Matrixs", 
+    "Spares List",
+    "BOM List",
+    "Machine List",
+    "PM NOTIFICATION LIST",
+    "PM WORK ORDER",
+    "PM SCHEDULE"
 
 ]
 

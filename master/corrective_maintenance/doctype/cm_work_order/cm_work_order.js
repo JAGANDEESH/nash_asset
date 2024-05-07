@@ -8,7 +8,7 @@ frappe.ui.form.on('Cm Work Order', {
             frm.set_df_property('spare_qty', 'hidden', 0); // Replace 'field_name_3' with your actual field name
             // Optionally, refresh the fields to ensure they are updated on the form
             frm.refresh_field('spare');
-            frm.refresh_field('sapre_uom');
+            frm.refresh_field('spare_uom');
             frm.refresh_field('spare_qty');
         });
     }

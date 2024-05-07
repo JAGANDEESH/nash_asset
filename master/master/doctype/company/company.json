@@ -131,14 +131,13 @@
   {
    "fieldname": "company_pincode",
    "fieldtype": "Data",
-   "label": "Pincode",
-   "reqd": 1
+   "label": "Pincode"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-17 11:00:22.138028",
+ "modified": "2024-04-17 11:52:19.508693",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Company",
