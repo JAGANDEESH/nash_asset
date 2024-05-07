@@ -27,47 +27,60 @@
   },
   {
    "fieldname": "machine_number",
-   "fieldtype": "Data",
-   "label": "Machine Number"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine Number",
+   "options": "PM SCHEDULE"
   },
   {
+   "fetch_from": "machine_number.machine_type",
    "fieldname": "machine_type",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Machine Type"
   },
   {
+   "fetch_from": "machine_number.pm_schedule_name",
    "fieldname": "schedule_name",
    "fieldtype": "Data",
    "label": "Schedule Name"
   },
   {
+   "fetch_from": "machine_number.assigned_department",
    "fieldname": "assigned_department",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Assigned Department"
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Description"
   },
   {
+   "fetch_from": "machine_number.plan_date",
    "fieldname": "plan_date",
    "fieldtype": "Date",
    "label": "Plan Date"
   },
   {
+   "fetch_from": "machine_number.frequency",
    "fieldname": "frequency",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Frequency"
   },
   {
+   "fetch_from": "machine_number.checklist_number",
    "fieldname": "check_list_number",
    "fieldtype": "Data",
    "label": "Check List Number"
   },
   {
+   "fetch_from": "machine_number.plant",
    "fieldname": "plant",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Plant"
   },
   {
@@ -92,12 +105,8 @@
    "read_only": 1
   },
   {
-   "bold": 1,
    "fieldname": "notification_id",
    "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Notification ID",
    "no_copy": 1,
    "read_only": 1,
@@ -107,7 +116,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-26 11:22:04.276725",
+ "modified": "2024-05-02 17:13:05.710483",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM NOTIFICATION LIST",

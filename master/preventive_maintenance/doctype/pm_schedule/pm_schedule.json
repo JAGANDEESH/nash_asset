@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "field:schedule_no",
  "creation": "2024-03-25 12:21:33.720989",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,8 +9,12 @@
   "section_break_gfdm",
   "machine_number",
   "machine_type",
+  "schedule_no",
   "pm_schedule_name",
+  "schedule_date",
   "description",
+  "assigned_department",
+  "plant",
   "frequency",
   "checklist_number",
   "plan_date",
@@ -18,7 +22,8 @@
   "created_date",
   "approved_by",
   "approved_date",
-  "status"
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -27,10 +32,12 @@
   },
   {
    "fieldname": "machine_number",
-   "fieldtype": "Data",
-   "label": "Machine Number"
+   "fieldtype": "Link",
+   "label": "Machine Number",
+   "options": "Machine List"
   },
   {
+   "fetch_from": "machine_number.type",
    "fieldname": "machine_type",
    "fieldtype": "Data",
    "label": "Machine Type"
@@ -47,13 +54,15 @@
   },
   {
    "fieldname": "frequency",
-   "fieldtype": "Data",
-   "label": "Frequency"
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Daily\nWeekly\nMonthly"
   },
   {
    "fieldname": "checklist_number",
-   "fieldtype": "Data",
-   "label": "Checklist Number"
+   "fieldtype": "Link",
+   "label": "Checklist Number",
+   "options": "Check List"
   },
   {
    "fieldname": "plan_date",
@@ -62,7 +71,7 @@
   },
   {
    "fieldname": "created_by",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Created By"
   },
   {
@@ -72,7 +81,7 @@
   },
   {
    "fieldname": "approved_by",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Approved By"
   },
   {
@@ -82,17 +91,52 @@
   },
   {
    "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "schedule_no",
    "fieldtype": "Data",
-   "label": "Status"
+   "label": "PM Schedule No",
+   "unique": 1
+  },
+  {
+   "fieldname": "schedule_date",
+   "fieldtype": "Date",
+   "label": "PM Schedule Date"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plant"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PM SCHEDULE",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Link",
+   "label": "Assigned Department",
+   "options": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 12:26:30.157407",
+ "modified": "2024-04-30 18:44:26.104515",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM SCHEDULE",
- "naming_rule": "Set by user",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -105,6 +149,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
