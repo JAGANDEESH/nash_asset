@@ -1,0 +1,40 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <div class="container">
+        <h4><strong>UOM Entry:</strong></h4>
+        <form class="form">
+            <br>
+            <div class="form-group">
+                <label for="uomCode">UOM Code:</label>
+                <input type="text" class="form-control" id="uomCode" placeholder="Enter UOM Code">
+            </div>
+            <div class="form-group">
+                <label for="uomName">UOM Name:</label>
+                <input type="text" class="form-control" id="uomName" placeholder="Enter UOM Name">
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <input type="text" class="form-control" id="status" placeholder="Enter Status">
+                <!-- <select class="form-control" id="status">
+                <option value="active">active</option>
+                <option value="inactive">inactive</option>
+            </select> -->
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <h4><strong> UOM</h4></strong>
+        <table class="table table-hover table-border-outside display">
+            <thead>
+                <td>UOM Code</td>
+                <td>UOM Name</td>
+                <td>Status</td>
+            </thead>
+            <tbody id="data_table">
+            </tbody>
+        </table>
+    </div>
+</body>

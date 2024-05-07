@@ -1,0 +1,246 @@
+<body>
+
+    <div>
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()"
+                style="color: rgb(12, 131, 236); margin-top: 55px;">|||</button>
+            <ul class="nav flex-column" style="overflow: hidden;">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dashboardsDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>DASHBOARDS</span>
+                    </a>
+                    <a class="dropdown-item machine-drop dropdown-menu" href="#">
+                        <span>MACHINE DASHBOARD</span>
+                    </a>
+
+                    <br>
+                    <br>
+                    <br>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="mastersDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>MASTERS</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mastersDropdown" style="max-height: 900px;">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Company" data-route="Form">COMPANY</span>
+                            <span>
+                        </a>
+                        <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Plant" data-route="Form">PLANT</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Location" data-route="Form">LOCATION</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Department" data-route="Form">DEPARTMENT</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-random" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="shift" data-route="Form">SHIFT</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Machine Type" data-route="Form">MACHINE
+                                TYPE</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-anchor" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Spares List" data-route="Form">SPARES</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="BOM List" data-route="Form">BOM</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Machine List" data-route="Form">MACHINE</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Check List" data-route="Form">CHECK
+                                LISTS</span><button onclick="popHtml()" id="addButton">+</button> </span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="UOM" data-route="Form">UOM</span>
+                        </a> <br>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <span class="clickable" data-doctype="Escalation Matrixs" data-route="Form">ESCALATION
+                                MATRIXS</span>
+                        </a> <br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="head">
+                <h3 style="color:white">Machine Dashboard</h3>
+                <input type="checkbox" id="checkbox1" checked />
+                <label for="checkbox1">Corrective </label>
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2">Preventive </label>
+            </div>
+            <br>
+            <div class="row g-6 mb-6">
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body c1">
+                            <div class="row">
+                                <div class="col disp">
+                                    <span class="h6 font-semibold  text-sm d-block mb-2">New</span>
+                                    <span id="countElementId1" class="h3 font-bold mb-0">----</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="bg-tertiary icon-shape rounded-circle text-lg ">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body c2">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 font-semibold  text-sm d-block mb-2">Assigned</span>
+                                    <span id="countElementId2" class="h3 font-bold mb-0">----</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class=" icon-shape  text-lg rounded-circle">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body c3">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 font-semibold  text-sm d-block mb-2">In progress</span>
+                                    <span id="countElementId3" class="h3 font-bold mb-0">----</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class=" icon-shape  text-lg ">
+                                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body c4">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 font-semibold  text-sm d-block mb-2">Reopen</span>
+                                    <span id="countElementId4" class="h3 font-bold mb-0">----</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon-shape text-lg">
+                                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="me">
+                <div class="row g-6 mb-6">
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body c5">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold  text-sm d-block mb-2">Completed</span>
+                                        <span id="countElementId5" class="h3 font-bold mb-0">----</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="bg-tertiary icon-shape rounded-circle text-lg ">
+                                            <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="card shadow border-0">
+                            <div class="card-body c6">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="h6 font-semibold  text-sm d-block mb-2">Closed</span>
+                                        <span id="countElementId6" class="h3 font-bold mb-0">----</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class=" icon-shape  text-lg rounded-circle">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h4 style="font-weight: bold; font-style: italic;">Machine List</h4>
+                <table style="color:black; padding: 10px;border: 1px solid;" id="data_table"
+                    class="data_table table table-striped table-secondary">
+                    <thead class="table"></thead>
+
+                </table>
+            </div>
+
+
+            <div class="row chart">
+                <div class="col-6 line">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-6 pie d-flex align-items-center justify-content-center">
+                    <div>
+                        <canvas id="myCharts"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
