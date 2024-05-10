@@ -1,0 +1,22 @@
+.page-head {
+    display: none;
+}
+.form{
+    background-color: rgb(253, 234, 209);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-control{
+    background-color: white;
+}
+thead{
+    background-color:rgb(253, 202, 125);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+tbody{
+    background-color: rgb(253, 234, 209);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

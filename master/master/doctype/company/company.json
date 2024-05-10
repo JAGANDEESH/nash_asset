@@ -131,8 +131,7 @@
   {
    "fieldname": "company_pincode",
    "fieldtype": "Data",
-   "label": "Pincode",
-   "reqd": 1
+   "label": "Pincode"
   }
  ],
  "index_web_pages_for_search": 1,

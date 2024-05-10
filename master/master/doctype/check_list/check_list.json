@@ -9,7 +9,7 @@
   "section_break_nlkx",
   "checklist_number",
   "checklist_description",
-  "machine_type_name",
+  "machine_type",
   "checklist",
   "amended_from"
  ],
@@ -39,8 +39,7 @@
   {
    "fieldname": "checklist",
    "fieldtype": "Table",
-   "options": "Check Lists Child",
-   "reqd": 1
+   "options": "Check Lists Child"
   },
   {
    "fieldname": "checklist_description",
@@ -50,18 +49,17 @@
    "reqd": 1
   },
   {
-   "fieldname": "machine_type_name",
+   "fieldname": "machine_type",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "M/C Types",
-   "options": "Machine Type",
-   "reqd": 1
+   "label": "Machine Type",
+   "options": "Machine Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-21 10:26:16.759569",
+ "modified": "2024-04-26 10:34:14.227297",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Check List",
