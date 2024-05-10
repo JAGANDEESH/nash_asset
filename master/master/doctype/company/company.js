@@ -37,8 +37,17 @@ frappe.ui.form.on("Company", {
         d.show();
     }
 	},
+    
 });
 
+frappe.ui.form.on('Company' ,{
+    refresh(frm){
+        frm.add_custom_button("Plant List",()=>{
+            frappe.set_route('List','Plant');
+        })
+        
+    }
+})
 // frappe.listview_settings['Company'] = {
 //     refresh: function(listview) {
 //         listview.page.add_inner_button("Company Name", function() {
@@ -59,3 +68,4 @@ frappe.ui.form.on("Company", {
 
 
 
+// frm.remove_custom_button('Plant List');
