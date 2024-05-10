@@ -13,12 +13,7 @@
   "assigned_by",
   "work_order_status",
   "section_break_j3ph",
-  "check_point",
-  "check_for",
-  "standard_spec__value",
-  "action_to_be_taken",
-  "remarks",
-  "if_click_list_was_closed",
+  "checklist",
   "amended_from"
  ],
  "fields": [
@@ -49,39 +44,20 @@
   },
   {
    "fieldname": "section_break_j3ph",
-   "fieldtype": "Section Break",
-   "label": "Check List"
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "check_point",
-   "fieldtype": "Data",
-   "label": "Check Point"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "series",
+   "options": "PMW.-.######"
   },
   {
-   "fieldname": "check_for",
-   "fieldtype": "Data",
-   "label": "Check For"
-  },
-  {
-   "fieldname": "standard_spec__value",
-   "fieldtype": "Data",
-   "label": "Standard Spec / Value"
-  },
-  {
-   "fieldname": "action_to_be_taken",
-   "fieldtype": "Data",
-   "label": "Action to be Taken"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks"
-  },
-  {
-   "default": "0",
-   "fieldname": "if_click_list_was_closed",
-   "fieldtype": "Check",
-   "label": "If click list was closed"
+   "fieldname": "checklist",
+   "fieldtype": "Link",
+   "label": "Checklist",
+   "options": "Check Lists Child"
   },
   {
    "fieldname": "amended_from",
@@ -92,19 +68,12 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "label": "series",
-   "options": "PMW.-.######"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 12:20:55.133419",
+ "modified": "2024-05-08 15:27:51.130271",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM WORK ORDER",

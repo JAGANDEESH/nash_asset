@@ -3,3 +3,4 @@ Master
 master1
 PREVENTIVE MAINTENANCE
 CORRECTIVE MAINTENANCE
+report_doctypes
