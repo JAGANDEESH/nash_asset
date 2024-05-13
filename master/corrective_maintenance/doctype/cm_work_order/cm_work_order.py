@@ -4,108 +4,50 @@
 import frappe
 from frappe.model.document import Document
 
-
 class CmWorkOrder(Document):
-	pass
-
-# custom_app/custom_scripts/save_work_order.py
-
-import frappe
-from frappe import _
+    pass
 
 @frappe.whitelist()
-def save_work_order(doc):
+def insert_or_update_work_order(data):
+    """
+    Insert or update Cm Work Order from form data.
+    :param data: Dictionary containing the work order data.
+    """
     try:
-        # Extract data from the submitted form
-        work_order_number = doc.get('workOrderNumber')
-        spares = doc.get('spares', [])
-
-        # Create a new instance of the Work Order document
-        work_order = frappe.new_doc('Cm Work Order')
-        work_order.work_order_number = work_order_number
-
-        # Iterate over each spare part and add them to the child table
-        for spare in spares:
-            spare = spare.get('spare')
-            spareUOM = spare.get('spareUOM')
-            spareQty = spare.get('spareQty')
-
-            if spare and spareUOM and spareQty:
-                work_order.append('spare_parts', {
-                    'spare': spare,
-                    'spareUOM': spareUOM,
-                    'spareQty': spareQty
-                })
-
-        # Save the Work Order document
-        work_order.insert(ignore_permissions=True)
-
-        # Return success message
-        return _("Work Order {0} created successfully").format(work_order.name)
-
-    except Exception as e:
-        frappe.log_error(frappe.get_traceback(), _("Work Order Creation Failed"))
-        return _("Failed to create Work Order. Please try again.")
-
-
-#save data to db
-# @frappe.whitelist()
-# def my_list(data):
-#     try:
-#         # Insert the form data into the database
-#         parent_doc_id = data.get("name")
-#         child_doc = frappe.get_doc({
-#             "doctype": "List of Cm work child",
-#             "parent": parent_doc_id,
-#             "root_cause": data.get("root_cause"),
-#             "action_taken": data.get("action_taken"),
-#             "status": data.get("status"),
-#             "start_date_time": data.get("start_date_time"),
-#             "end_date_time": data.get("end_date_time")
-#         })
-#         cm_work_order.insert(ignore_permissions=True)
-
-#         # Save child table entries (spare_table)
-#         child_doc = frappe.get_doc({
-#                 "doctype": "Cm Spare Child",
-#                 "parent": parent_doc_id,
-#                 "spare": spare_data.get("spare"),
-#                 "spare_uom": spare_data.get("spare_uom"),
-#                 "spare_qty": spare_data.get("spare_qty")
-#             })
-#         child_doc.insert(ignore_permissions=True)
-
-#         frappe.db.commit()
-#         return _("Form submitted successfully!")
-
-#     except Exception as e:
-#         frappe.log_error(frappe.get_traceback(), _("Form Submission Failed"))
-#         return None
-
-import frappe
-from frappe import _
-
-@frappe.whitelist()
-def my_list(data):
-    try:
-        # Retrieve the parent document ID from the data
-        parent_doc_id = data.get("name")
-
-        # Create a new child document for the specified parent document (Cm Work Order)
-        child_doc = frappe.get_doc({
-            "doctype": "List of Cm work child",
-            "parent": parent_doc_id,
-            "root_cause": data.get("root_cause"),
-            "action_taken": data.get("action_taken"),
-            "status": data.get("status"),
-            "start_date_time": data.get("start_date_time"),
-            "end_date_time": data.get("end_date_time"),
-        })
-        child_doc.insert(ignore_permissions=True)
-
+        # Check if it's a new or existing work order
+        if 'name' in data and frappe.db.exists('Cm Work Order', data['name']):
+            # It's an update
+            work_order = frappe.get_doc('Cm Work Order', data['name'])
+            work_order.update(data)
+            msg = "Updated"
+        else:
+            # It's a new entry
+            work_order = frappe.new_doc('Cm Work Order')
+            work_order.update(data)
+            msg = "Inserted"
+        
+        work_order.save(ignore_permissions=True)
         frappe.db.commit()
-        return _("Values stored successfully in child table!")
-
+        
+        return {'status': True, 'message': f'Work Order {msg} Successfully', 'name': work_order.name}
     except Exception as e:
-        frappe.log_error(frappe.get_traceback(), _("Failed to store values in child table"))
-        return None
+        return {'status': False, 'message': str(e)}
+
+def prepare_data_and_call():
+    # Example data, this should come from your client-side form submission
+    data = {
+        "root_cause": "Example root cause",
+        "action_taken": "Replaced faulty part",
+        "status": "Closed",
+        "start_date_time": "2024-01-01 08:00:00",
+        "end_date_time": "2024-01-01 12:00:00",
+        "spares": [
+            {"spare": "Spare A", "spare_uom": "pcs", "spare_qty": 2},
+            {"spare": "Spare B", "spare_uom": "pcs", "spare_qty": 3}
+        ]
+    }
+
+    # Simulating an insert or update
+    result = insert_or_update_work_order(data)
+    frappe.msgprint(result['message'])
+

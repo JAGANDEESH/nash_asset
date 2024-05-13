@@ -9,7 +9,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "letterhead": null,
- "modified": "2024-04-26 18:32:36.893739",
+ "modified": "2024-05-07 11:09:55.415796",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine Report",
@@ -18,7 +18,7 @@
  "query": "SELECT\n  `machine_number`,\n  `machine_name`,\n  `type`\nFROM\n  `tabMachine List`\nWHERE\n  `docstatus` = 1\n  AND COALESCE(`type`, 0) < LENGTH(`machine_name`)\n\nUNION ALL\n\nSELECT\n  `machine_name` AS machine_name_Int_100,\n  `machine_description` AS machine_description_Int_100,\n  `type` AS type_Int_100,\n  `makemodelcapacity` AS makemodelcapacity_Int_100,\n  `specification` AS specification_Int_100,\n  `commission_date` AS commission_date_Int_100,\n  `supplier__service_address` AS supplier_service_address_Int_100,\n  `service_contact_person` AS service_contact_person_Int_100,\n  `critical_spares_bom` AS critical_spares_bom_Int_100,\n  `power_consumption` AS power_consumption_Int_100,\n  `required_air` AS required_air_Int_100,\n  `required_gas` AS required_gas_Int_100\nFROM\n  `tabMachine List`\nWHERE\n  `docstatus` = 1\n  AND COALESCE(`machine_name`, 0) < `qty`\n  AND NOT EXISTS (\n    SELECT `name` FROM `tabMachine List` WHERE `work_order` = `tabMachine List`.`name`\n  );\n",
  "ref_doctype": "Machine List",
  "report_name": "Machine Report",
- "report_type": "Query Report",
+ "report_type": "Script Report",
  "roles": [
   {
    "role": "System Manager"

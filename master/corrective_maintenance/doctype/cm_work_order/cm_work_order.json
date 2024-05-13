@@ -21,6 +21,8 @@
   "report_time",
   "problem_description",
   "required_completion",
+  "list_cm_work_order",
+  "cm_work_spare",
   "list_section",
   "column_break_orso",
   "custom_work_order_table",
@@ -148,12 +150,29 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "list_section",
+   "fieldtype": "HTML",
+   "label": "LIST"
+  },
+  {
+   "fieldname": "list_cm_work_order",
+   "fieldtype": "Table",
+   "label": "list CM Work Order",
+   "options": "List of Cm work child"
+  },
+  {
+   "fieldname": "cm_work_spare",
+   "fieldtype": "Table",
+   "label": "CM Work Spare",
+   "options": "Cm Spare Child"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 17:55:15.710795",
+ "modified": "2024-05-03 17:43:21.602773",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Work Order",
