@@ -9,7 +9,7 @@
   "item_code",
   "item_description",
   "column_break_vx8c",
-  "uom",
+  "uom_name",
   "mfr_part_no",
   "initial_qty",
   "column_break_uiln",
@@ -30,13 +30,6 @@
    "fieldname": "item_description",
    "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "fieldname": "uom",
-   "fieldtype": "Link",
-   "label": "UOM",
-   "options": "UOM",
-   "reqd": 1
   },
   {
    "fieldname": "mfr_part_no",
@@ -76,12 +69,19 @@
   {
    "fieldname": "column_break_uiln",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom_name",
+   "fieldtype": "Link",
+   "label": "UOM Name",
+   "options": "UOM",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-25 16:39:05.798978",
+ "modified": "2024-05-16 12:19:27.462639",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Spares List",

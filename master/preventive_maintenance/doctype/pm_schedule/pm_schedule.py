@@ -12,6 +12,7 @@ class PMSCHEDULE(Document):
         pm_notification.system_manager = system_manager
         pm_notification.machine_number = self.machine_number
         pm_notification.machine_type = self.machine_type
+        pm_notification.schedule_no = self.schedule_no
         pm_notification.schedule_name = self.pm_schedule_name
         pm_notification.assigned_department = self.assigned_department,
         pm_notification.description = self.description
