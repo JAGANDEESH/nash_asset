@@ -1,6 +1,8 @@
 import frappe
 from frappe import _
 
+# For Card Count
+
 @frappe.whitelist()
 def get_count(Company,Plant,Location,Department,Spareslist,Machinelist):
     Company_count = frappe.db.count(Company);
@@ -23,6 +25,8 @@ def get_plantdoctype(Plant):
     doc2 = frappe.db.get_all('Plant',fields=['code','name1','state']);
 
     return doc2
+
+# For Company Information
 
 @frappe.whitelist()
 def get_company():
@@ -54,6 +58,7 @@ def get_company():
     ht += "</table>"
     return ht
 
+# For Plant Information 
 
 @frappe.whitelist()
 def get_plant():
@@ -84,6 +89,3 @@ def get_plant():
 
     ht += "</table>"
     return ht
-
-# machine = machine_dashboard()
-# machine.frappe_call()

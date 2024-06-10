@@ -20,36 +20,51 @@
    "label": "LIST OF CM WORK ORDER"
   },
   {
+   "columns": 2,
    "fieldname": "root_cause",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Root Cause"
   },
   {
+   "columns": 2,
    "fieldname": "action_taken",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Action Taken"
   },
   {
+   "columns": 2,
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Inprogress\nClosed"
   },
   {
+   "columns": 2,
    "fieldname": "starting_date_and_time",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Starting Date and Time"
   },
   {
+   "columns": 2,
    "fieldname": "closing_date_and_time",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Closing Date and Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-16 17:54:51.012847",
+ "modified": "2024-05-07 16:33:12.783395",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "List of Cm work child",
