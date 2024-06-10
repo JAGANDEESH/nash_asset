@@ -15,7 +15,6 @@
   "shift_name",
   "work_order_date",
   "work_order_type",
-  "column_break_vmkt",
   "report_by",
   "reported_date",
   "report_time",
@@ -23,9 +22,6 @@
   "required_completion",
   "list_cm_work_order",
   "cm_work_spare",
-  "list_section",
-  "column_break_orso",
-  "custom_work_order_table",
   "amended_from"
  ],
  "fields": [
@@ -114,10 +110,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "column_break_vmkt",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "work_order_date",
    "fieldtype": "Date",
    "label": "Work Order Date"
@@ -128,20 +120,6 @@
    "label": "Work Order Type"
   },
   {
-   "fieldname": "list_section",
-   "fieldtype": "Section Break",
-   "label": "LIST"
-  },
-  {
-   "fieldname": "custom_work_order_table",
-   "fieldtype": "HTML",
-   "options": "<style>\n    /* Style for form container */\n    .form-container {\n        width: 80%;\n        margin: 20px auto;\n        padding: 20px;\n        border: 1px solid #ccc;\n        border-radius: 8px;\n        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n    }\n\n    /* Style for form labels */\n    .form-container label {\n        display: inline-block;\n        width: 180px;\n        margin-bottom: 10px;\n    }\n\n    /* Style for form inputs */\n    .form-container input[type=\"text\"],\n    .form-container input[type=\"datetime-local\"] {\n        width: calc(100% - 190px);\n        /* Adjust based on label width */\n        padding: 8px;\n        margin-bottom: 10px;\n        border: 1px solid #ccc;\n        border-radius: 4px;\n    }\n\n    /* Style for table */\n    #sparesTable {\n        width: 100%;\n        border-collapse: collapse;\n        margin-top: 20px;\n    }\n\n    #sparesTable th,\n    #sparesTable td {\n        border: 1px solid #ccc;\n        padding: 8px;\n    }\n\n    /* Style for buttons */\n    button {\n        padding: 10px 20px;\n        margin-right: 10px;\n        border: none;\n        border-radius: 4px;\n        cursor: pointer;\n    }\n\n    #addRow {\n        background-color: #4CAF50;\n        color: white;\n    }\n\n    .addParent {\n        background-color: #4CAF50;\n        color: white;\n    }\n\n    .delete-child {\n        background-color: #f44336;\n        color: white;\n    }\n\n    .delete-parent {\n        background-color: #f44336;\n        color: white;\n    }\n\n    /* Style for parent buttons */\n    .parent-buttons {\n        margin-top: 20px;\n    }\n\n    /* Clearfix for floats */\n    .clearfix::after {\n        content: \"\";\n        clear: both;\n        display: table;\n    }\n\n    td {\n        text-align: center;\n        justify-content: center;\n    }\ninput {\n        width: 200px !important;\n    }\n</style>\n<div class=\"form-container\">\n        <form id=\"my-form\">\n            <div>\n                <label for=\"root-cause\">Root Cause:</label>\n                <input type=\"text\" id=\"root-cause\" name=\"root-cause\">\n            </div>\n            <div>\n                <label for=\"action-taken\">Action Taken:</label>\n                <input type=\"text\" id=\"action-taken\" name=\"action-taken\">\n            </div>\n            <div>\n                <label for=\"status\">Status:</label>\n                <input type=\"text\" id=\"status\" name=\"status\">\n            </div>\n            <div>\n                <label for=\"start-datetime\">Starting Date &amp; Time:</label>\n                <input type=\"datetime-local\" id=\"start-datetime\" name=\"start-datetime\">\n            </div>\n            <div>\n                <label for=\"end-datetime\">Closing Date &amp; Time:</label>\n                <input type=\"datetime-local\" id=\"end-datetime\" name=\"end-datetime\">\n            </div>\n            <div>\n                <label for=\"action\">Action:</label>\n                <input type=\"text\" id=\"action\" name=\"action\">\n            </div>\n\n            <hr>\n\n            <table id=\"sparesTable\">\n                <thead>\n                    <tr>\n                        <th>Spare</th>\n                        <th>Spare UOM</th>\n                        <th>Spare Qty</th>\n                        <th>Action</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td><input id=\"ct1\" type=\"text\" name=\"spare\"></td>\n                        <td><input id=\"ct2\" type=\"text\" name=\"spare-uom\"></td>\n                        <td><input id=\"ct3\" type=\"text\" name=\"spare-qty\"></td>\n                        <td><button type=\"button\" id=\"addRow\">Add Row</button>\n                            <button type=\"button\" class=\"delete-child\">Remove</button>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </form>\n        <div class=\"parent-buttons\">\n            <button type=\"button\" id=\"addParent\" class=\"addParent\">Add Parent</button>\n            <button type=\"button\" class=\"delete-parent\">Delete Parent</button>\n        </div>\n<br>\n<div class=\"form-group buttons\">\n                    <button type=\"submit\" class=\"btn btn-primary\" id=\"submit\">Submit</button>\n                </div>\n    </div>"
-  },
-  {
-   "fieldname": "column_break_orso",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -150,11 +128,6 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
-  },
-  {
-   "fieldname": "list_section",
-   "fieldtype": "HTML",
-   "label": "LIST"
   },
   {
    "fieldname": "list_cm_work_order",
@@ -172,7 +145,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-03 17:43:21.602773",
+ "modified": "2024-05-13 11:42:59.657736",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Work Order",

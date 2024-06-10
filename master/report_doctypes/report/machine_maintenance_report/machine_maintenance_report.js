@@ -11,27 +11,66 @@ frappe.query_reports["Machine Maintenance Report"] = {
     });
   },
   filters: [
+    // {
+    //   fieldname: "period_from",
+    //   label: __("Period From"),
+    //   fieldtype: "MultiSelectList",
+    //   options: from_period(),
+    // },
+    // {
+    //   fieldname: "period_to",
+    //   label: __("Period To"),
+    //   fieldtype: "MultiSelectList",
+    //   options: to_period(),
+    // },
     {
-      fieldname: "crsesn",
-      label: __("Period From"),
-      fieldtype: "Date",
-    },
-    {
-      fieldname: "werks",
-      label: __("Period To"),
-      fieldtype: "Date",
-    },
-    {
-      fieldname: "div_code",
+      fieldname: "shift",
       label: __("Shift"),
-      fieldtype: "Link",
-      options: "shift",
+      fieldtype: "MultiSelectList",
+      options: shift(),
     },
     {
-      fieldname: "plot_type",
+      fieldname: "department",
       label: __("Department"),
-      fieldtype: "Link",
-      options: "Department",
+      fieldtype: "MultiSelectList",
+      options: department(),
     },
   ],
 };
+
+function shift() {
+  let values = [];
+  frappe.call({
+    method:
+      "master.report_doctypes.report.machine_maintenance_report.machine_maintenance_report.get_shift",
+    callback: function (r) {
+      if (r.message) {
+        r.message.forEach((row) =>
+          values.push({ value: row.shift_name, description: row.shift_name })
+        );
+      }
+    },
+  });
+
+  return values;
+}
+
+function department() {
+  let values = [];
+  frappe.call({
+    method:
+      "master.report_doctypes.report.machine_maintenance_report.machine_maintenance_report.get_department",
+    callback: function (r) {
+      if (r.message) {
+        r.message.forEach((row) =>
+          values.push({
+            value: row.department_name1,
+            description: row.department_name1,
+          })
+        );
+      }
+    },
+  });
+
+  return values;
+}
