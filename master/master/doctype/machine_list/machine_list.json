@@ -30,7 +30,9 @@
   "code",
   "name1",
   "amended_from",
-  "status"
+  "status",
+  "section_break_giap",
+  "attach_fojs"
  ],
  "fields": [
   {
@@ -184,11 +186,19 @@
    "fieldtype": "Link",
    "label": "Plant Code",
    "options": "Plant"
+  },
+  {
+   "fieldname": "attach_fojs",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "section_break_giap",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-26 11:11:12.055952",
+ "modified": "2024-06-05 12:40:11.249755",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Machine List",

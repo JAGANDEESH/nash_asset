@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"aQjeh9M8Xu\",\"type\":\"card\",\"data\":{\"card_name\":\"Company Master\",\"col\":4}},{\"id\":\"dWoHu5El8n\",\"type\":\"card\",\"data\":{\"card_name\":\"Machine Master\",\"col\":4}},{\"id\":\"eROKt91aXD\",\"type\":\"card\",\"data\":{\"card_name\":\"Spare Master\",\"col\":4}}]",
+ "content": "[{\"id\":\"bPteNOgaDm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Masters</span>\",\"col\":12}},{\"id\":\"v7K29HVXCX\",\"type\":\"paragraph\",\"data\":{\"text\":\"Company Master\",\"col\":12}},{\"id\":\"OTyr3w34Df\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Company\",\"col\":3}},{\"id\":\"LHTaXv0Fce\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Plant\",\"col\":3}},{\"id\":\"jQ1HWJh_YS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Department\",\"col\":3}},{\"id\":\"dmJBoO3uTp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Location\",\"col\":3}},{\"id\":\"YWHABD6ELt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Shift\",\"col\":3}},{\"id\":\"O-aavoLWFi\",\"type\":\"paragraph\",\"data\":{\"text\":\"Machine Master\",\"col\":12}},{\"id\":\"goMhqJ9z2B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Machine List\",\"col\":3}},{\"id\":\"vhMF5ThfGf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Machine Type\",\"col\":3}},{\"id\":\"dcy6MWUUrQ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Spares List\",\"col\":3}},{\"id\":\"NMzgG-V2KA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Check List\",\"col\":3}},{\"id\":\"9WxLQgxoYN\",\"type\":\"paragraph\",\"data\":{\"text\":\"Spares Master\",\"col\":12}},{\"id\":\"rC4sbGi5De\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BOM List\",\"col\":3}},{\"id\":\"4fPoPHh6Ze\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"UOM\",\"col\":3}},{\"id\":\"Ehgib5lOpr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Escalation Matrixs\",\"col\":3}}]",
  "creation": "2024-03-14 12:08:34.964764",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,156 +12,8 @@
  "indicator_color": "green",
  "is_hidden": 0,
  "label": "Masters",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Spare Master",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "BOM List",
-   "link_count": 0,
-   "link_to": "BOM List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "UOM",
-   "link_count": 0,
-   "link_to": "UOM",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Escalation Matrixs",
-   "link_count": 0,
-   "link_to": "Escalation Matrixs",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Company Master",
-   "link_count": 5,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Company",
-   "link_count": 0,
-   "link_to": "Company",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Plant",
-   "link_count": 0,
-   "link_to": "Plant",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Department",
-   "link_count": 0,
-   "link_to": "Department",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Location",
-   "link_count": 0,
-   "link_to": "Location",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "shift",
-   "link_count": 0,
-   "link_to": "shift",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Machine Master",
-   "link_count": 4,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Machine List",
-   "link_count": 0,
-   "link_to": "Machine List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Machine Type",
-   "link_count": 0,
-   "link_to": "Machine Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Spares List",
-   "link_count": 0,
-   "link_to": "Spares List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Check List",
-   "link_count": 0,
-   "link_to": "Check List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2024-03-25 16:20:51.390405",
+ "links": [],
+ "modified": "2024-06-08 11:50:18.709763",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Masters",
@@ -172,6 +24,103 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 1.0,
- "shortcuts": [],
+ "shortcuts": [
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Machine List",
+   "link_to": "Machine List",
+   "stats_filter": "[[\"Machine List\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Company",
+   "link_to": "Company",
+   "stats_filter": "[[\"Company\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Machine Type",
+   "link_to": "Machine Type",
+   "stats_filter": "[[\"Machine Type\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Plant",
+   "link_to": "Plant",
+   "stats_filter": "[[\"Plant\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Department",
+   "link_to": "Department",
+   "stats_filter": "[[\"Department\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Spares List",
+   "link_to": "Spares List",
+   "stats_filter": "[[\"Spares List\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Location",
+   "link_to": "Location",
+   "stats_filter": "[[\"Location\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Check List",
+   "link_to": "Check List",
+   "stats_filter": "[[\"Check List\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Shift",
+   "link_to": "shift",
+   "stats_filter": "[[\"shift\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "BOM List",
+   "link_to": "BOM List",
+   "stats_filter": "[[\"BOM List\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "UOM",
+   "link_to": "UOM",
+   "stats_filter": "[[\"UOM\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Escalation Matrixs",
+   "link_to": "Escalation Matrixs",
+   "stats_filter": "[[\"Escalation Matrixs\",\"name\",\"is\",\"set\",false]]",
+   "type": "DocType"
+  }
+ ],
  "title": "Masters"
 }

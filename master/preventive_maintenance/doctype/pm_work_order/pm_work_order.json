@@ -10,16 +10,12 @@
   "naming_series",
   "work_order_number",
   "work_order_date",
-  "assigned_by",
+  "assigned_to",
   "work_order_status",
-  "section_break_j3ph",
-  "check_point",
-  "check_for",
-  "standard_spec__value",
-  "action_to_be_taken",
-  "remarks",
-  "if_click_list_was_closed",
-  "amended_from"
+  "pm_notification",
+  "machine_number",
+  "amended_from",
+  "pm_workorder_checklist_child"
  ],
  "fields": [
   {
@@ -30,58 +26,21 @@
    "fieldname": "work_order_number",
    "fieldtype": "Data",
    "label": "Work Order Number",
+   "read_only": 1,
    "unique": 1
   },
   {
    "fieldname": "work_order_date",
    "fieldtype": "Date",
-   "label": "Work Order Date"
-  },
-  {
-   "fieldname": "assigned_by",
-   "fieldtype": "Data",
-   "label": "Assigned By"
+   "label": "Work Order Date",
+   "read_only": 1
   },
   {
    "fieldname": "work_order_status",
-   "fieldtype": "Data",
-   "label": "Work Order Status"
-  },
-  {
-   "fieldname": "section_break_j3ph",
-   "fieldtype": "Section Break",
-   "label": "Check List"
-  },
-  {
-   "fieldname": "check_point",
-   "fieldtype": "Data",
-   "label": "Check Point"
-  },
-  {
-   "fieldname": "check_for",
-   "fieldtype": "Data",
-   "label": "Check For"
-  },
-  {
-   "fieldname": "standard_spec__value",
-   "fieldtype": "Data",
-   "label": "Standard Spec / Value"
-  },
-  {
-   "fieldname": "action_to_be_taken",
-   "fieldtype": "Data",
-   "label": "Action to be Taken"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks"
-  },
-  {
-   "default": "0",
-   "fieldname": "if_click_list_was_closed",
-   "fieldtype": "Check",
-   "label": "If click list was closed"
+   "fieldtype": "Select",
+   "label": "Work Order Status",
+   "options": "Assigned\nInprogress\nClosed\nReopen\nCompleted\nSendback",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -99,12 +58,38 @@
    "hidden": 1,
    "label": "series",
    "options": "PMW.-.######"
+  },
+  {
+   "fieldname": "pm_notification",
+   "fieldtype": "Table MultiSelect",
+   "label": "PM Notification",
+   "options": "PMW child",
+   "read_only": 1
+  },
+  {
+   "fieldname": "machine_number",
+   "fieldtype": "Table MultiSelect",
+   "label": "Machine Number",
+   "options": "pm workorder machineno",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pm_workorder_checklist_child",
+   "fieldtype": "Table",
+   "options": "pm workorder checklist child",
+   "read_only": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Data",
+   "label": "Assigned To",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 12:20:55.133419",
+ "modified": "2024-06-07 18:46:29.249564",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM WORK ORDER",

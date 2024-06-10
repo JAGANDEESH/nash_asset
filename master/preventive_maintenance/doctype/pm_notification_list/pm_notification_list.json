@@ -9,6 +9,7 @@
   "section_break_mo21",
   "naming_series",
   "notification_id",
+  "schedule_no",
   "machine_number",
   "machine_type",
   "schedule_name",
@@ -18,6 +19,7 @@
   "frequency",
   "check_list_number",
   "plant",
+  "notification_status",
   "amended_from"
  ],
  "fields": [
@@ -26,27 +28,28 @@
    "fieldtype": "Section Break"
   },
   {
+   "fetch_from": "schedule_no.machine_number",
    "fieldname": "machine_number",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Machine Number",
-   "options": "PM SCHEDULE"
+   "options": "Machine List"
   },
   {
-   "fetch_from": "machine_number.machine_type",
+   "fetch_from": "schedule_no.machine_type",
    "fieldname": "machine_type",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Machine Type"
   },
   {
-   "fetch_from": "machine_number.pm_schedule_name",
+   "fetch_from": "schedule_no.pm_schedule_name",
    "fieldname": "schedule_name",
    "fieldtype": "Data",
    "label": "Schedule Name"
   },
   {
-   "fetch_from": "machine_number.assigned_department",
+   "fetch_from": "schedule_no.assigned_department",
    "fieldname": "assigned_department",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -58,26 +61,26 @@
    "label": "Description"
   },
   {
-   "fetch_from": "machine_number.plan_date",
+   "fetch_from": "schedule_no.plan_date",
    "fieldname": "plan_date",
    "fieldtype": "Date",
    "label": "Plan Date"
   },
   {
-   "fetch_from": "machine_number.frequency",
+   "fetch_from": "schedule_no.frequency",
    "fieldname": "frequency",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Frequency"
   },
   {
-   "fetch_from": "machine_number.checklist_number",
+   "fetch_from": "schedule_no.checklist_number",
    "fieldname": "check_list_number",
    "fieldtype": "Data",
    "label": "Check List Number"
   },
   {
-   "fetch_from": "machine_number.plant",
+   "fetch_from": "schedule_no.plant",
    "fieldname": "plant",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -111,12 +114,25 @@
    "no_copy": 1,
    "read_only": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "schedule_no",
+   "fieldtype": "Link",
+   "label": "PM Schedule No",
+   "options": "PM SCHEDULE"
+  },
+  {
+   "fieldname": "notification_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Notification Status"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-02 17:13:05.710483",
+ "modified": "2024-05-22 14:38:59.979264",
  "modified_by": "Administrator",
  "module": "PREVENTIVE MAINTENANCE",
  "name": "PM NOTIFICATION LIST",
