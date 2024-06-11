@@ -1,0 +1,58 @@
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<div class="container1">
+    <form class="head" id="projectform">
+        <div class="col-md-6">
+            <div class="form">
+                <div class="list">
+                    <label>Project Name</label>
+                    <input type="text" class="input" id="project_name">
+                    <label>Customer Name </label>
+                    <input type="text" class="input" id="customer_name"><br>
+                    <label>Project Status</label>
+                    <label class="select">
+                        <select id="project_status">
+                            <option>Active</option>
+                            <option>Inactive</option>
+                        </select>
+                    </label>
+                    <label>Developer Name </label>
+                    <input type="text" class="input" id="developer_name">
+                    <label>Actual Effort Days </label>
+                    <input type="text" class="input" id="actual_effort_days">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form">
+                <div class="list1">
+                    <label>Start Date</label>
+                    <input type="date" class="input" id="start_date">
+
+                    <label>End Date</label>
+                    <input type="date" class="input" id="end_date">
+
+                    <label>Over Due Days</label>
+                    <input type="text" class="input" id="over_due_days">
+
+                    <label>Project Cost </label>
+                    <input type="text" class="input" id="project_cost">
+
+                    <label>Payment Recieved </label>
+                    <input type="text" class="input" id="payment_recieved">
+
+                    <label>Pending Payment </label>
+                    <input type="text" class="input" id="pending_payment">
+                </div>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead id="project"></thead>
+            <tr></tr>
+        </table>
+    </div>
+</div>

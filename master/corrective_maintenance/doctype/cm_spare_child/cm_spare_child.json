@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_xyda",
+  "cm_workorder_idx",
   "spare",
   "spare_uom",
   "spare_qty"
@@ -28,7 +29,7 @@
   {
    "columns": 2,
    "fieldname": "spare_uom",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Spare UOM"
@@ -40,12 +41,19 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Spare Qty"
+  },
+  {
+   "columns": 2,
+   "fieldname": "cm_workorder_idx",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "S.No"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-07 16:31:51.160392",
+ "modified": "2024-05-16 13:18:51.947939",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Spare Child",

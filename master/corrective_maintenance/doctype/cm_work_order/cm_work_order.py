@@ -1,8 +1,10 @@
 # Copyright (c) 2024, mazework and contributors
 # For license information, please see license.txt
 
+
 import frappe
 from frappe.model.document import Document
+from array import array
 
 class CmWorkOrder(Document):
     pass
@@ -50,4 +52,21 @@ def prepare_data_and_call():
     # Simulating an insert or update
     result = insert_or_update_work_order(data)
     frappe.msgprint(result['message'])
+
+# 1
+@frappe.whitelist()
+def get_spare_list():
+    sparelist = frappe.get_all("Spares List",fields=["item_code"])
+    print(type(sparelist))
+    print(sparelist)
+    spares =[]
+    for i in sparelist:
+        sp = (i['item_code'])
+        spares.append(sp)
+    return spares
+
+
+
+
+
 

@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PRO-.####",
+ "creation": "2024-06-04 19:39:00.428458",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "customer_name",
+  "project_status",
+  "developer_name",
+  "actual_effort_days",
+  "column_break_lplm",
+  "start_date",
+  "end_date",
+  "over_due_days",
+  "project_cost",
+  "payment_recieved",
+  "pending_payment",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "project_status",
+   "fieldtype": "Select",
+   "label": "Project Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "developer_name",
+   "fieldtype": "Data",
+   "label": "Developer Name"
+  },
+  {
+   "fieldname": "actual_effort_days",
+   "fieldtype": "Data",
+   "label": "Actual Effort Days"
+  },
+  {
+   "fieldname": "column_break_lplm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "over_due_days",
+   "fieldtype": "Data",
+   "label": " Over Due Days"
+  },
+  {
+   "fieldname": "project_cost",
+   "fieldtype": "Data",
+   "label": "Project Cost"
+  },
+  {
+   "fieldname": "payment_recieved",
+   "fieldtype": "Data",
+   "label": "  Payment Recieved"
+  },
+  {
+   "fieldname": "pending_payment",
+   "fieldtype": "Data",
+   "label": "Pending Payment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-04 22:18:12.317523",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Project details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

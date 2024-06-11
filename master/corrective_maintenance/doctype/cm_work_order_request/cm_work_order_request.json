@@ -12,22 +12,26 @@
   "wo_request_date",
   "wo_type",
   "department_name",
+  "column_break_hvpi",
   "machine_type",
   "machine_number",
   "shift_name",
   "plant_name",
+  "column_break_py34",
   "assigned_department_name",
   "report_time",
   "report_by",
-  "status",
+  "pro_status",
   "column_break_i11u",
   "breakdown_date",
   "priority",
+  "column_break_ryug",
   "required_completion",
   "problem_description",
   "column_break_1xk2",
   "created_by",
   "created_date",
+  "column_break_out6",
   "approved_date",
   "amended_from"
  ],
@@ -120,7 +124,6 @@
    "reqd": 1
   },
   {
-   "default": "eval:frappe.session.user",
    "fieldname": "report_by",
    "fieldtype": "Data",
    "label": "Report By"
@@ -139,13 +142,6 @@
    "fieldname": "approved_date",
    "fieldtype": "Date",
    "label": "Approved Date"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "New\nReopen\nInprogress\nAssigned\nCompleted\nclosed",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_i11u",
@@ -182,12 +178,38 @@
    "fieldtype": "Link",
    "label": "Assigned Department Name",
    "options": "Department"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pro_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Pro_Status",
+   "options": "New\nReopen\nInprogress\nAssigned\nCompleted\nclosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hvpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_py34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ryug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_out6",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-04-16 09:41:54.561143",
+ "modified": "2024-06-07 18:46:40.005884",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Work Order Request",
@@ -203,6 +225,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
@@ -210,5 +233,30 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Yellow",
+   "title": "New"
+  },
+  {
+   "color": "Blue",
+   "title": "Assigned"
+  },
+  {
+   "color": "Purple",
+   "title": "Inprogress"
+  },
+  {
+   "color": "Cyan",
+   "title": "Reopen"
+  },
+  {
+   "color": "Green",
+   "title": "Completed"
+  },
+  {
+   "color": "Pink",
+   "title": "Closed"
+  }
+ ]
 }

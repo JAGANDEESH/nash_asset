@@ -3,11 +3,11 @@
 
 frappe.ui.form.on("Company", {
 	refresh(frm) {
-		frm.add_custom_button('compnay 1',()=>{
+		frm.add_inner_button('compnay 1',()=>{
 			frappe.msgprint(__('Hi This is Company 1 Doctype'));
 		},'Com_List')
 
-		frm.add_custom_button('compnay 2',()=>{
+		frm.add_inner_button('compnay 2',()=>{
 			frappe.msgprint(__('Hi This is Company 2 Doctype'));
 		},'Com_List')
 
@@ -69,3 +69,4 @@ frappe.ui.form.on('Company' ,{
 
 
 // frm.remove_custom_button('Plant List');
+

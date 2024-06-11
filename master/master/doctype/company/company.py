@@ -22,3 +22,5 @@ def set_value(self):
 	frappe.db.set_value('Company','vishnu','company_state','Bangalore')
 	company_state,company_code = frappe.db.get_value('Company','company_state',['company_state','company_code'])
 	frappe.msgprint("The Company state name is {0} Company code is {1}");
+
+
