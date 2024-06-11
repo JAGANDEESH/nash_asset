@@ -1,1 +1,277 @@
-[]
+[
+ {
+  "amended_from": null,
+  "assigned_to": "Admin",
+  "docstatus": 1,
+  "doctype": "PM WORK ORDER",
+  "machine_number": [
+   {
+    "machine_number": "788901",
+    "parent": "PMW-000001",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   }
+  ],
+  "modified": "2024-06-03 18:21:09.282376",
+  "name": "PMW-000001",
+  "naming_series": "PMW.-.######",
+  "pm_notification": [
+   {
+    "parent": "PMW-000001",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000003"
+   }
+  ],
+  "pm_workorder_checklist_child": [
+   {
+    "action_to_be_taken": "6",
+    "check_for": "Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000003",
+    "parent": "PMW-000001",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "10"
+   },
+   {
+    "action_to_be_taken": "2",
+    "check_for": "Check for Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000003",
+    "parent": "PMW-000001",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "8"
+   }
+  ],
+  "work_order_date": "2024-06-03",
+  "work_order_number": "PMW-000001",
+  "work_order_status": "Assigned",
+  "workflow_state": null
+ },
+ {
+  "amended_from": null,
+  "assigned_to": "Admin",
+  "docstatus": 1,
+  "doctype": "PM WORK ORDER",
+  "machine_number": [
+   {
+    "machine_number": "8034",
+    "parent": "PMW-000002",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   }
+  ],
+  "modified": "2024-06-03 18:22:17.747784",
+  "name": "PMW-000002",
+  "naming_series": "PMW.-.######",
+  "pm_notification": [
+   {
+    "parent": "PMW-000002",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000002"
+   }
+  ],
+  "pm_workorder_checklist_child": [
+   {
+    "action_to_be_taken": "6",
+    "check_for": "Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000002",
+    "parent": "PMW-000002",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "10"
+   },
+   {
+    "action_to_be_taken": "2",
+    "check_for": "Check for Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000002",
+    "parent": "PMW-000002",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "8"
+   }
+  ],
+  "work_order_date": "2024-06-03",
+  "work_order_number": "PMW-000002",
+  "work_order_status": "Assigned",
+  "workflow_state": null
+ },
+ {
+  "amended_from": null,
+  "assigned_to": "Admin",
+  "docstatus": 1,
+  "doctype": "PM WORK ORDER",
+  "machine_number": [
+   {
+    "machine_number": "9920008036",
+    "parent": "PMW-000003",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   }
+  ],
+  "modified": "2024-06-03 18:22:35.223429",
+  "name": "PMW-000003",
+  "naming_series": "PMW.-.######",
+  "pm_notification": [
+   {
+    "parent": "PMW-000003",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000001"
+   }
+  ],
+  "pm_workorder_checklist_child": [
+   {
+    "action_to_be_taken": "6",
+    "check_for": "Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000001",
+    "parent": "PMW-000003",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "10"
+   },
+   {
+    "action_to_be_taken": "2",
+    "check_for": "Check for Oil Leakage",
+    "check_point": "Oil Leakage",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000001",
+    "parent": "PMW-000003",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "8"
+   }
+  ],
+  "work_order_date": "2024-06-03",
+  "work_order_number": "PMW-000003",
+  "work_order_status": "Assigned",
+  "workflow_state": null
+ },
+ {
+  "amended_from": null,
+  "assigned_to": "Admin",
+  "docstatus": 1,
+  "doctype": "PM WORK ORDER",
+  "machine_number": [
+   {
+    "machine_number": "788988",
+    "parent": "PMW-000004",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   }
+  ],
+  "modified": "2024-06-10 17:21:44.877184",
+  "name": "PMW-000004",
+  "naming_series": "PMW.-.######",
+  "pm_notification": [
+   {
+    "parent": "PMW-000004",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000004"
+   }
+  ],
+  "pm_workorder_checklist_child": [
+   {
+    "action_to_be_taken": "2",
+    "check_for": "dkaj",
+    "check_point": "8098",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000004",
+    "parent": "PMW-000004",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "8"
+   }
+  ],
+  "work_order_date": "2024-06-03",
+  "work_order_number": "PMW-000004",
+  "work_order_status": "Assigned",
+  "workflow_state": null
+ },
+ {
+  "amended_from": null,
+  "assigned_to": "Admin",
+  "docstatus": 1,
+  "doctype": "PM WORK ORDER",
+  "machine_number": [
+   {
+    "machine_number": "788901",
+    "parent": "PMW-000005",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   },
+   {
+    "machine_number": "788901",
+    "parent": "PMW-000005",
+    "parentfield": "machine_number",
+    "parenttype": "PM WORK ORDER"
+   }
+  ],
+  "modified": "2024-06-10 17:48:54.533288",
+  "name": "PMW-000005",
+  "naming_series": "PMW.-.######",
+  "pm_notification": [
+   {
+    "parent": "PMW-000005",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000006"
+   },
+   {
+    "parent": "PMW-000005",
+    "parentfield": "pm_notification",
+    "parenttype": "PM WORK ORDER",
+    "pm_notification_fk": "PMN-000005"
+   }
+  ],
+  "pm_workorder_checklist_child": [
+   {
+    "action_to_be_taken": "lifkas",
+    "check_for": "value",
+    "check_point": "fdoki",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000006",
+    "parent": "PMW-000005",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "flasijf"
+   },
+   {
+    "action_to_be_taken": "lifkas",
+    "check_for": "value",
+    "check_point": "fdoki",
+    "if_click_list_was_closed": 0,
+    "notification_id": "PMN-000005",
+    "parent": "PMW-000005",
+    "parentfield": "pm_workorder_checklist_child",
+    "parenttype": "PM WORK ORDER",
+    "remarks": null,
+    "standard_spec__value": "flasijf"
+   }
+  ],
+  "work_order_date": "2024-06-10",
+  "work_order_number": "PMW-000005",
+  "work_order_status": "Assigned",
+  "workflow_state": "Pending"
+ }
+]

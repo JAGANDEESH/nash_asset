@@ -13,8 +13,8 @@
   "column_break_nrq7",
   "location_code",
   "location",
-  "column_break_q4b5",
   "status",
+  "column_break_q4b5",
   "created_by",
   "created_date"
  ],
@@ -38,7 +38,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Plant Code",
-   "options": "Plant"
+   "options": "Plant",
+   "reqd": 1
   },
   {
    "fieldname": "location",
@@ -58,12 +59,16 @@
   {
    "fieldname": "created_by",
    "fieldtype": "Data",
-   "label": "Created By"
+   "label": "Created By",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "created_date",
    "fieldtype": "Datetime",
-   "label": "Created Date"
+   "label": "Created Date",
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "location_code",
@@ -86,13 +91,13 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Plant Name",
-   "options": "Plant"
+   "options": "Plant",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-04-16 14:31:49.175701",
+ "modified": "2024-06-11 16:27:09.618450",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Location",
@@ -109,7 +114,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],

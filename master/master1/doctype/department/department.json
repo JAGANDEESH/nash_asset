@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:code",
+ "autoname": "field:department_code",
  "creation": "2024-03-14 13:46:04.907369",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,10 +12,12 @@
   "department_code",
   "deparment_name1",
   "description",
+  "column_break_fo9n",
   "incharge_name",
   "incharge_email",
   "incharge_mobile",
   "status",
+  "column_break_vadh",
   "created_by",
   "created_date"
  ],
@@ -29,6 +31,7 @@
    "fieldtype": "Link",
    "label": "Plant Code",
    "options": "Plant",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -49,7 +52,8 @@
   {
    "fieldname": "incharge_name",
    "fieldtype": "Data",
-   "label": "Incharge Name"
+   "label": "Incharge Name",
+   "reqd": 1
   },
   {
    "fieldname": "incharge_email",
@@ -72,31 +76,43 @@
    "fieldname": "created_by",
    "fieldtype": "Data",
    "label": "Created By",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "created_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Created Date",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "deparment_name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Department Name"
+   "label": "Department Name",
+   "reqd": 1
   },
   {
    "fieldname": "department_code",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Department code",
+   "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_fo9n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vadh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-26 10:36:44.690577",
+ "modified": "2024-06-11 15:42:00.013623",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Department",

@@ -9,6 +9,8 @@
   "section_break_hxcg",
   "name1",
   "code",
+  "company_name",
+  "column_break_byuq",
   "plant_address",
   "country",
   "state",
@@ -16,13 +18,12 @@
   "column_break_65dy",
   "plant_incharge",
   "incharge",
-  "column_break_pmfd",
   "incharge_mobile",
   "incharge_email",
+  "column_break_pmfd",
   "status",
   "created_by",
   "created_date",
-  "company_name",
   "amended_from"
  ],
  "fields": [
@@ -91,12 +92,14 @@
   {
    "fieldname": "created_by",
    "fieldtype": "Data",
-   "label": "Created By"
+   "label": "Created By",
+   "read_only": 1
   },
   {
    "fieldname": "created_date",
    "fieldtype": "Datetime",
-   "label": "Created Date"
+   "label": "Created Date",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -132,13 +135,17 @@
    "fieldname": "company_name",
    "fieldtype": "Link",
    "label": "Company Name",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_byuq",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-04-16 16:18:58.068629",
+ "modified": "2024-06-11 16:25:45.967876",
  "modified_by": "Administrator",
  "module": "Master",
  "name": "Plant",

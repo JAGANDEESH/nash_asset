@@ -7,8 +7,9 @@
  "field_order": [
   "section_break_dpc1",
   "machine_type",
-  "description",
   "plant",
+  "description",
+  "column_break_uozj",
   "status",
   "created_by",
   "created_date"
@@ -49,17 +50,23 @@
    "fieldname": "created_by",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Created By"
+   "label": "Created By",
+   "read_only": 1
   },
   {
    "fieldname": "created_date",
    "fieldtype": "Datetime",
-   "label": "Created Date"
+   "label": "Created Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uozj",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-16 16:34:14.884314",
+ "modified": "2024-06-11 17:15:44.147681",
  "modified_by": "Administrator",
  "module": "master1",
  "name": "Machine Type",

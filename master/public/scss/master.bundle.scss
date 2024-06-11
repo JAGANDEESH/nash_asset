@@ -15,12 +15,16 @@ background-color:#DCC7A7;
 
 .btn.btn-primary{
     background-color:#DCC7A7;
-	color: whitesmoke;
+	color: black;
     padding-left: 45px;
+}
+.btn.btn-primary:hover{
+    transition: 2s;
+    background-color: #DCC7A7;
 }
 .navbar{
     background:#DCC7A7;
-    	color: whitesmoke;
+    	color: black;
 } 
 
 .grid-row > .row .col, .form-section .grid-row > .section-body .col, .form-dashboard-section .grid-row > .section-body .col, .grid-row > .dialog-assignment-row .col {
