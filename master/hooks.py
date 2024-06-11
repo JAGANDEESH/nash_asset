@@ -242,6 +242,10 @@ fixtures = [
     "PM NOTIFICATION LIST",
     "PM WORK ORDER",
     "PM SCHEDULE"
+    "Cm Work Order",
+    "Cm Work Order Request",
+    "Cm Spare Child",
+    "List of Cm work child"
 ]
 
 
