@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2024-05-07 15:57:35.002920",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pm_notification_fk"
+ ],
+ "fields": [
+  {
+   "fieldname": "pm_notification_fk",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PMN Name",
+   "options": "PM NOTIFICATION LIST",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-07 17:56:27.502468",
+ "modified_by": "Administrator",
+ "module": "PREVENTIVE MAINTENANCE",
+ "name": "PMW child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

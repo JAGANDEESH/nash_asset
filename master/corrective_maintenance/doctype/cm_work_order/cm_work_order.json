@@ -22,7 +22,6 @@
   "required_completion",
   "list_cm_work_order",
   "cm_work_spare",
-  "list_section",
   "amended_from"
  ],
  "fields": [
@@ -131,11 +130,6 @@
    "search_index": 1
   },
   {
-   "fieldname": "list_section",
-   "fieldtype": "HTML",
-   "label": "LIST"
-  },
-  {
    "fieldname": "list_cm_work_order",
    "fieldtype": "Table",
    "label": "list CM Work Order",
@@ -151,7 +145,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-03 17:43:21.602773",
+ "modified": "2024-05-13 11:42:59.657736",
  "modified_by": "Administrator",
  "module": "CORRECTIVE MAINTENANCE",
  "name": "Cm Work Order",

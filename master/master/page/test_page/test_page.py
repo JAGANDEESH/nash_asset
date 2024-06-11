@@ -35,7 +35,3 @@ def my_list(machine_number, machine_name):
     return machine_names, machine_numbers, machine_types, total_shots, plants
 
 
-#doctype entry
-
-
-

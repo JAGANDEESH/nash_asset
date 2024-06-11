@@ -315,6 +315,15 @@ frappe.ui.form.on('Cm Work Order', {
                 });
             });
     }
+
+    renderedListOfCmWorkOrder(frm);
+  },
+});
+frappe.ui.form.on("List of Cm work child", {
+  list_cm_work_order_add: function (frm, cdt, cdn) {
+    console.log(frm.doc.list_cm_work_order);
+    frm.trigger("renderedListOfCmWorkOrder");
+  },
 });
 frappe.ui.form.on("List of Cm work child", {
     list_cm_work_order_add: function (frm, cdt, cdn) {

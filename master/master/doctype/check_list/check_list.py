@@ -52,3 +52,6 @@ class CheckList(Document):
 #         })
 #         check_list.insert()
 #         return "New checklist added successfully."
+
+
+
